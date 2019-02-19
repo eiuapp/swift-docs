@@ -1,0 +1,2929 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>The Rings · Swift Docs - Swift 官方文档阅读 by Donald Tsang(圆月弯刀)</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Donald Tsang（圆月弯刀）">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-ghcolors.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="overview_policies.html" />
+    
+    
+    <link rel="prev" href="overview_architecture.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"eiuapp/swift-docs","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://b.qqbb.app" target="_blank" class="custom-link">Donald Tsang</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://eiu.app/swift-docs" target="_blank" class="custom-link">Swift Docs</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">序言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">环境配置</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="env.html">
+            
+                <a href="env.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    swift 2.17 环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">index</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="getting_started.html">
+            
+                <a href="getting_started.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Overview and Concepts¶</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="api/object_api_v1_overview.html">
+            
+                <a href="api/object_api_v1_overview.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Object Storage API overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="overview_architecture.html">
+            
+                <a href="overview_architecture.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Swift Architectural Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="overview_rings.html">
+            
+                <a href="overview_rings.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    The Rings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="overview_policies.html">
+            
+                <a href="overview_policies.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Storage Policies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="overview_reaper.html">
+            
+                <a href="overview_reaper.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    The Account Reaper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../overview_auth.html">
+            
+                <span>
+            
+                    
+                        <b>4.6.</b>
+                    
+                    The Auth System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../overview_acl.html">
+            
+                <span>
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Access Control Lists (ACLs)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../overview_replication.html">
+            
+                <span>
+            
+                    
+                        <b>4.8.</b>
+                    
+                    Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../ratelimit.html">
+            
+                <span>
+            
+                    
+                        <b>4.9.</b>
+                    
+                    Rate Limiting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../overview_large_objects.html">
+            
+                <span>
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Large Object Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../overview_object_versioning.html">
+            
+                <span>
+            
+                    
+                        <b>4.11.</b>
+                    
+                    Object Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../overview_global_cluster.html">
+            
+                <span>
+            
+                    
+                        <b>4.12.</b>
+                    
+                    Global Clusters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../overview_container_sync.html">
+            
+                <span>
+            
+                    
+                        <b>4.13.</b>
+                    
+                    Container to Container Synchronization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../overview_expiring_objects.html">
+            
+                <span>
+            
+                    
+                        <b>4.14.</b>
+                    
+                    Expiring Object Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../cors.html">
+            
+                <span>
+            
+                    
+                        <b>4.15.</b>
+                    
+                    CORS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../crossdomain.html">
+            
+                <span>
+            
+                    
+                        <b>4.16.</b>
+                    
+                    Cross-domain Policy File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="../overview_erasure_code.html">
+            
+                <span>
+            
+                    
+                        <b>4.17.</b>
+                    
+                    Erasure Code Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="../overview_encryption.html">
+            
+                <span>
+            
+                    
+                        <b>4.18.</b>
+                    
+                    Object Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="../overview_backing_store.html">
+            
+                <span>
+            
+                    
+                        <b>4.19.</b>
+                    
+                    Using Swift as Backing Store for Service Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="../ring_background.html">
+            
+                <span>
+            
+                    
+                        <b>4.20.</b>
+                    
+                    Building a Consistent Hashing Ring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="../ring_partpower.html">
+            
+                <span>
+            
+                    
+                        <b>4.21.</b>
+                    
+                    Modifying Ring Partition Power
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="../associated_projects.html">
+            
+                <span>
+            
+                    
+                        <b>4.22.</b>
+                    
+                    Associated Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Developer Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../development_guidelines.html">
+            
+                <span>
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Development Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../development_saio.html">
+            
+                <span>
+            
+                    
+                        <b>5.2.</b>
+                    
+                    SAIO - Swift All In One
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../first_contribution_swift.html">
+            
+                <span>
+            
+                    
+                        <b>5.3.</b>
+                    
+                    First Contribution to Swift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../policies_saio.html">
+            
+                <span>
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Adding Storage Policies to an Existing SAIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../development_auth.html">
+            
+                <span>
+            
+                    
+                        <b>5.5.</b>
+                    
+                    Auth Server and Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../development_middleware.html">
+            
+                <span>
+            
+                    
+                        <b>5.6.</b>
+                    
+                    Middleware and Metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../development_ondisk_backends.html">
+            
+                <span>
+            
+                    
+                        <b>5.7.</b>
+                    
+                    Pluggable On-Disk Back-end APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Administrator Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../howto_installmultinode.html">
+            
+                <span>
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Instructions for a Multiple Server Swift Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../deployment_guide.html">
+            
+                <span>
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Deployment Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../apache_deployment_guide.html">
+            
+                <span>
+            
+                    
+                        <b>6.3.</b>
+                    
+                    Apache Deployment Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../admin_guide.html">
+            
+                <span>
+            
+                    
+                        <b>6.4.</b>
+                    
+                    Administrator’s Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../replication_network.html">
+            
+                <span>
+            
+                    
+                        <b>6.5.</b>
+                    
+                    Dedicated replication network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../logs.html">
+            
+                <span>
+            
+                    
+                        <b>6.6.</b>
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../ops_runbook/index.html">
+            
+                <span>
+            
+                    
+                        <b>6.7.</b>
+                    
+                    Swift Ops Runbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../admin/index.html">
+            
+                <span>
+            
+                    
+                        <b>6.8.</b>
+                    
+                    OpenStack Swift Administrator Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../install/index.html">
+            
+                <span>
+            
+                    
+                        <b>6.9.</b>
+                    
+                    Object Storage Install Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Object Storage v1 REST API Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../api/object_api_v1_overview.html">
+            
+                <span>
+            
+                    
+                        <b>7.1.</b>
+                    
+                    Object Storage API overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../api/discoverability.html">
+            
+                <span>
+            
+                    
+                        <b>7.2.</b>
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../api/authentication.html">
+            
+                <span>
+            
+                    
+                        <b>7.3.</b>
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../api/container_quotas.html">
+            
+                <span>
+            
+                    
+                        <b>7.4.</b>
+                    
+                    Container quotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../api/object_versioning.html">
+            
+                <span>
+            
+                    
+                        <b>7.5.</b>
+                    
+                    Object versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../api/large_objects.html">
+            
+                <span>
+            
+                    
+                        <b>7.6.</b>
+                    
+                    Large objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../api/temporary_url_middleware.html">
+            
+                <span>
+            
+                    
+                        <b>7.7.</b>
+                    
+                    Temporary URL middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="../api/form_post_middleware.html">
+            
+                <span>
+            
+                    
+                        <b>7.8.</b>
+                    
+                    Form POST middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="../api/use_content-encoding_metadata.html">
+            
+                <span>
+            
+                    
+                        <b>7.9.</b>
+                    
+                    Use Content-Encoding metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="../api/use_the_content-disposition_metadata.html">
+            
+                <span>
+            
+                    
+                        <b>7.10.</b>
+                    
+                    Use the Content-Disposition metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">OpenStack End User Guide¶</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Source Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.</b>
+                    
+                    Partitioned Consistent Hash Ring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.1.</b>
+                    
+                    Ring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.2" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.2.</b>
+                    
+                    Ring Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.3" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.3.</b>
+                    
+                    Composite Ring Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../proxy.html">
+            
+                <span>
+            
+                    
+                        <b>9.2.</b>
+                    
+                    Proxy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.2.1" data-path="../proxy.html">
+            
+                <span>
+            
+                    
+                        <b>9.2.1.</b>
+                    
+                    Proxy Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2.2" data-path="../proxy.html">
+            
+                <span>
+            
+                    
+                        <b>9.2.2.</b>
+                    
+                    Proxy Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.</b>
+                    
+                    Account
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.3.1" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.1.</b>
+                    
+                    Account Auditor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3.2" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.2.</b>
+                    
+                    Account Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3.3" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.3.</b>
+                    
+                    Account Reaper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3.4" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.4.</b>
+                    
+                    Account Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.</b>
+                    
+                    Container
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.4.1" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.1.</b>
+                    
+                    Container Auditor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.2" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.2.</b>
+                    
+                    Container Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.3" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.3.</b>
+                    
+                    Container Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.4" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.4.</b>
+                    
+                    Container Reconciler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.5" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.5.</b>
+                    
+                    Container Replicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.6" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.6.</b>
+                    
+                    Container Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.7" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.7.</b>
+                    
+                    Container Updater
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../db.html">
+            
+                <span>
+            
+                    
+                        <b>9.5.</b>
+                    
+                    Account DB and Container DB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.5.1" data-path="../db.html">
+            
+                <span>
+            
+                    
+                        <b>9.5.1.</b>
+                    
+                    DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5.2" data-path="../db.html">
+            
+                <span>
+            
+                    
+                        <b>9.5.2.</b>
+                    
+                    DB replicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.</b>
+                    
+                    Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.6.1" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.1.</b>
+                    
+                    Object Auditor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.2" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.2.</b>
+                    
+                    Object Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.3" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.3.</b>
+                    
+                    Object Replicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.4" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.4.</b>
+                    
+                    Object Reconstructor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.5" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.5.</b>
+                    
+                    Object Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.6" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.6.</b>
+                    
+                    Object Updater
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.</b>
+                    
+                    Misc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.7.1" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.1.</b>
+                    
+                    ACLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.2" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.2.</b>
+                    
+                    Buffered HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.3" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.3.</b>
+                    
+                    Constraints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.4" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.4.</b>
+                    
+                    Container Sync Realms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.5" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.5.</b>
+                    
+                    Direct Client
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.6" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.6.</b>
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.7" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.7.</b>
+                    
+                    Internal Client
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.8" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.8.</b>
+                    
+                    Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.9" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.9.</b>
+                    
+                    MemCacheD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.10" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.10.</b>
+                    
+                    Request Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.11" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.11.</b>
+                    
+                    Swob
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.12" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.12.</b>
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.13" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.13.</b>
+                    
+                    WSGI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.14" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.14.</b>
+                    
+                    Storage Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.</b>
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.8.1" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.1.</b>
+                    
+                    Account Quotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.2" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.2.</b>
+                    
+                    Bulk Operations (Delete and Archive Auto Extraction)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.3" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.3.</b>
+                    
+                    CatchErrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.4" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.4.</b>
+                    
+                    CNAME Lookup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.5" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.5.</b>
+                    
+                    Container Quotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.6" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.6.</b>
+                    
+                    Container Sync Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.7" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.7.</b>
+                    
+                    Cross Domain Policies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.8" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.8.</b>
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.9" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.9.</b>
+                    
+                    Domain Remap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.10" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.10.</b>
+                    
+                    Dynamic Large Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.11" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.11.</b>
+                    
+                    Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.12" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.12.</b>
+                    
+                    FormPost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.13" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.13.</b>
+                    
+                    GateKeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.14" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.14.</b>
+                    
+                    Healthcheck
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.15" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.15.</b>
+                    
+                    Keymaster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.16" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.16.</b>
+                    
+                    KeystoneAuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.17" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.17.</b>
+                    
+                    List Endpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.18" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.18.</b>
+                    
+                    Memcache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.19" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.19.</b>
+                    
+                    Name Check (Forbidden Character Filter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.20" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.20.</b>
+                    
+                    Object Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.21" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.21.</b>
+                    
+                    Proxy Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.22" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.22.</b>
+                    
+                    Ratelimit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.23" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.23.</b>
+                    
+                    Recon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.24" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.24.</b>
+                    
+                    Server Side Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.25" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.25.</b>
+                    
+                    Static Large Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.26" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.26.</b>
+                    
+                    StaticWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.27" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.27.</b>
+                    
+                    Symlink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.28" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.28.</b>
+                    
+                    TempAuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.29" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.29.</b>
+                    
+                    TempURL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.30" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.30.</b>
+                    
+                    XProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Indices and tables¶</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../genindex.html">
+            
+                <span>
+            
+                    
+                        <b>10.1.</b>
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../py-modindex.html">
+            
+                <span>
+            
+                    
+                        <b>10.2.</b>
+                    
+                    Module Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../search.html">
+            
+                <span>
+            
+                    
+                        <b>10.3.</b>
+                    
+                    Search Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">未来</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" >
+            
+                <a target="_blank" href="https://b.qqbb.app/tags/swift/">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    我的swift探险之旅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" >
+            
+                <a target="_blank" href="https://eiuapp/swift-handbook/">
+            
+                    
+                        <b>11.2.</b>
+                    
+                    Swift Handbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">相关资源</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="tech_resource.html">
+            
+                <a href="tech_resource.html">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    swift技术工具与资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >The Rings</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><p>+++
+title = &quot;&#x5B98;&#x65B9;&#x4E2D;&#x6587;&#x6587;&#x6863; openstack swift overview rings&quot;
+date = 2019-01-21T00:00:00-08:00
+lastmod = 2019-01-22T02:35:17-08:00
+tags = [&quot;swift&quot;, &quot;transilation&quot;]
+categories = [&quot;swift&quot;]
+draft = false
+weight = 3001
++++</p>
+<p><a href="https://docs.openstack.org/swift/queens/overview_ring.html" target="_blank">https://docs.openstack.org/swift/queens/overview_ring.html</a></p>
+<p>OpenStack Docs: The Rings                  </p>
+<h2 id="the-rings">The Rings</h2>
+<p>updated: 2019-01-15 02:30</p>
+<h1 id="the-rings&#xB6;">The Rings<a href="#the-rings" title="Permalink to this headline">&#xB6;</a></h1>
+<p>The rings determine where data should reside in the cluster. There is a separate ring for account databases, container databases, and individual object storage policies but each ring works in the same way. These rings are externally managed. The server processes themselves do not modify the rings; they are instead given new rings modified by other tools.</p>
+<p>&#x73AF;&#x786E;&#x5B9A;&#x6570;&#x636E;&#x5E94;&#x9A7B;&#x7559;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5E10;&#x6237;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5BB9;&#x5668;&#x6570;&#x636E;&#x5E93;&#x548C;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x7B56;&#x7565;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x73AF;&#xFF0C;&#x4F46;&#x6BCF;&#x4E2A;&#x73AF;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x4E9B;&#x73AF;&#x662F;&#x5916;&#x90E8;&#x7BA1;&#x7406;&#x7684;&#x3002;&#x670D;&#x52A1;&#x8FDB;&#x7A0B;&#x672C;&#x8EAB;&#x4E0D;&#x4F1A;&#x4FEE;&#x6539;&#x73AF;; &#x76F8;&#x53CD;&#xFF0C;&#x5B83;&#x4EEC;&#x88AB;&#x8D4B;&#x4E88;&#x4E86;&#x7531;&#x5176;&#x4ED6;&#x5DE5;&#x5177;&#x4FEE;&#x6539;&#x7684;&#x65B0;&#x73AF;&#x3002;(&#x8BD1;&#x6CE8;&#xFF1A;ring&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;&#xFF0C;&#x53EA;&#x80FD;&#x4EA7;&#x751F;&#x65B0;ring)</p>
+<p>The ring uses a configurable number of bits from the MD5 hash of an item&#x2019;s path as a partition index that designates the device(s) on which that item should be stored. The number of bits kept from the hash is known as the partition power, and 2 to the partition power indicates the partition count. Partitioning the full MD5 hash ring allows the cluster components to process resources in batches. This ends up either more efficient or at least less complex than working with each item separately or the entire cluster all at once.</p>
+<p>&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x5173;&#x4E8E;&#x4E0B;&#x9762;2&#x6BB5;&#x6587;&#x5B57;&#xFF0C;&#x5148;&#x770B;<a href="https://b.qqbb.app/post/analysis-openstack-swift-overview-ring/" target="_blank">&#x8FD9;&#x91CC;</a>&#xFF0C;&#x53EF;&#x80FD;&#x6548;&#x679C;&#x8981;&#x597D;&#x5F88;&#x591A;&#x3002;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x770B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5168;&#x8499;&#xFF09;</p>
+<p>&#x73AF;&#x4F7F;&#x7528;&#x6765;&#x81EA;&#x9879;&#x76EE;&#x8DEF;&#x5F84;&#x7684;MD5&#x54C8;&#x5E0C;&#x7684;&#x53EF;&#x914D;&#x7F6E;&#x4F4D;&#x6570;&#x4F5C;&#x4E3A;&#x5206;&#x533A;&#x7D22;&#x5F15;&#xFF08;partition index&#xFF09;&#xFF0C;&#x8BE5;&#x5206;&#x533A;&#x7D22;&#x5F15;&#x6307;&#x5B9A;&#x5E94;&#x8BE5;&#x5B58;&#x50A8;&#x8BE5;&#x9879;&#x76EE;&#x7684;&#x8BBE;&#x5907;&#x3002;&#x4ECE;&#x6563;&#x5217;&#x4E2D;&#x4FDD;&#x7559;&#x7684;&#x6BD4;&#x7279;&#x6570;&#x79F0;&#x4E3A;&#x5206;&#x533A;&#x529F;&#x7387;&#xFF08;partition power&#xFF09;&#xFF0C;2&#x7684;&#x5206;&#x533A;&#x529F;&#x7387;&#x6B21;&#x65B9;&#x8868;&#x793A;&#x5206;&#x533A;&#x603B;&#x6570;&#xFF08;partition count&#xFF09;&#x3002;&#x5BF9;&#x5B8C;&#x6574;MD5&#x54C8;&#x5E0C;&#x73AF;&#x8FDB;&#x884C;&#x5206;&#x533A;&#x5141;&#x8BB8;&#x7FA4;&#x96C6;&#x7EC4;&#x4EF6;&#x6279;&#x91CF;&#x5904;&#x7406;&#x8D44;&#x6E90;&#x3002;&#x4E0E;&#x5355;&#x72EC;&#x5904;&#x7406;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x6216;&#x540C;&#x65F6;&#x5904;&#x7406;&#x6574;&#x4E2A;&#x96C6;&#x7FA4;&#x76F8;&#x6BD4;&#xFF0C;&#x8FD9;&#x6700;&#x7EC8;&#x4F1A;&#x66F4;&#x6709;&#x6548;&#x6216;&#x81F3;&#x5C11;&#x66F4;&#x7B80;&#x5355;&#x3002;(&#x8BD1;&#x6CE8;&#xFF1A;&#x6BD4;&#x5982;<a href="https://docs.openstack.org/swift/queens/install/initial-rings.html#create-account-ring" target="_blank">initial-rings</a>&#x65F6;&#xFF0C;&#x4F60;&#x914D;&#x7F6E;&#x7684;&#x662F;<code>swift-ring-builder account.builder create 10 3 1</code>, &#x5219;partition power&#x662F;10&#xFF0C;partition count&#x662F;1024=2**10)</p>
+<p>Another configurable value is the replica count, which indicates how many devices to assign for each partition in the ring. By having multiple devices responsible for each partition, the cluster can recover from drive or network failures.</p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x53EF;&#x914D;&#x7F6E;&#x7684;&#x503C;&#x662F;&#x526F;&#x672C;&#x6570;(&#x8BD1;&#x6CE8;&#xFF1A;&#x540C;&#x7406;&#xFF0C;&#x6B64;&#x914D;&#x7F6E;&#x526F;&#x672C;&#x6570;&#x662F;3)&#xFF0C;&#x5B83;&#x6307;&#x793A;&#x4E3A;&#x73AF;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x5206;&#x914D;&#x7684;&#x8BBE;&#x5907;&#x6570;&#x91CF;&#x3002;&#x901A;&#x8FC7;&#x8BA9;&#x591A;&#x4E2A;&#x8BBE;&#x5907;&#x8D1F;&#x8D23;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#xFF0C;&#x7FA4;&#x96C6;&#x53EF;&#x4EE5;&#x4ECE;&#x9A71;&#x52A8;&#x5668;&#x6216;&#x7F51;&#x7EDC;&#x6545;&#x969C;&#x4E2D;&#x6062;&#x590D;&#x3002;</p>
+<p>Devices are added to the ring to describe the capacity available for partition replica assignments. Devices are placed into failure domains consisting of region, zone, and server. Regions can be used to describe geographical systems characterized by lower bandwidth or higher latency between machines in different regions. Many rings will consist of only a single region. Zones can be used to group devices based on physical locations, power separations, network separations, or any other attribute that would lessen multiple replicas being unavailable at the same time.</p>
+<p>&#x5C06;&#x8BBE;&#x5907;&#x6DFB;&#x52A0;&#x5230;&#x73AF;&#x4E2D;&#x4EE5;&#x63CF;&#x8FF0;&#x53EF;&#x7528;&#x4E8E;&#x5206;&#x533A;&#x526F;&#x672C;&#x5206;&#x914D;&#x7684;&#x5BB9;&#x91CF;&#x3002;&#x8BBE;&#x5907;&#x88AB;&#x7F6E;&#x4E8E;&#x7531;region, zone, &#x548C; server&#x7EC4;&#x6210;&#x7684;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x3002;Regions&#x53EF;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x4EE5;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#x4E2D;&#x7684;&#x673A;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x8F83;&#x4F4E;&#x5E26;&#x5BBD;&#x6216;&#x8F83;&#x9AD8;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x4E3A;&#x7279;&#x5F81;&#x7684;&#x5730;&#x7406;&#x7CFB;&#x7EDF;&#x3002;&#x8BB8;&#x591A;&#x73AF;&#x53EA;&#x6709;&#x4E00;&#x4E2A;region&#x3002;Zones&#x53EF;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x7269;&#x7406;&#x4F4D;&#x7F6E;&#xFF0C;&#x7535;&#x6E90;&#x5206;&#x79BB;&#xFF0C;&#x7F51;&#x7EDC;&#x5206;&#x79BB;&#x6216;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#x6765;&#x5BF9;&#x8BBE;&#x5907;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x90FD;&#x4E0D;&#x53EF;&#x7528;&#x7684;&#x60C5;&#x5F62;&#x53D1;&#x751F;&#x3002;</p>
+<p>Devices are given a weight which describes the relative storage capacity contributed by the device in comparison to other devices.</p>
+<p>&#x7ED9;&#x4E88;&#x8BBE;&#x5907;&#x6743;&#x91CD;&#xFF0C;&#x8BE5;&#x6743;&#x91CD;&#x63CF;&#x8FF0;&#x4E86;&#x8BBE;&#x5907;&#x4E0E;&#x5176;&#x4ED6;&#x8BBE;&#x5907;&#x76F8;&#x6BD4;&#x6240;&#x8D21;&#x732E;&#x7684;&#x76F8;&#x5BF9;&#x5B58;&#x50A8;&#x5BB9;&#x91CF;&#x3002;</p>
+<p>When building a ring, replicas for each partition will be assigned to devices according to the devices&#x2019; weights. Additionally, each replica of a partition will preferentially be assigned to a device whose failure domain does not already have a replica for that partition. Only a single replica of a partition may be assigned to each device - you must have at least as many devices as replicas.</p>
+<p>&#x6784;&#x5EFA;&#x73AF;&#x65F6;&#xFF0C;&#x5C06;&#x6839;&#x636E;&#x8BBE;&#x5907;&#x7684;&#x6743;&#x91CD;&#x4E3A;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x5206;&#x914D;&#x526F;&#x672C;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5206;&#x533A;&#x7684;&#x6BCF;&#x4E2A;&#x526F;&#x672C;&#x5C06;&#x4F18;&#x5148;&#x5206;&#x914D;&#x7ED9;&#x5176;&#x6545;&#x969C;&#x57DF;&#x5C1A;&#x672A;&#x5177;&#x6709;&#x8BE5;&#x5206;&#x533A;&#x7684;&#x526F;&#x672C;&#x7684;&#x8BBE;&#x5907;&#x3002;&#x53EA;&#x80FD;&#x4E3A;&#x6BCF;&#x4E2A;&#x8BBE;&#x5907;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x5355;&#x4E2A;&#x526F;&#x672C; - &#x60A8;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x62E5;&#x6709;&#x4E0E;&#x526F;&#x672C;&#x4E00;&#x6837;&#x591A;&#x7684;&#x8BBE;&#x5907;&#x3002;&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x4E5F;&#x5C31;&#x662F;&#x8BBE;&#x5907;&#x6570;&#x91CF;&#x6700;&#x5C11;&#x4E3A;3&#xFF09;</p>
+<h2 id="ring-builder&#xB6;">Ring Builder<a href="#ring-builder" title="Permalink to this headline">&#xB6;</a></h2>
+<p>The rings are built and managed manually by a utility called the ring-builder. The ring-builder assigns partitions to devices and writes an optimized structure to a gzipped, serialized file on disk for shipping out to the servers. The server processes check the modification time of the file occasionally and reload their in-memory copies of the ring structure as needed. Because of how the ring-builder manages changes to the ring, using a slightly older ring usually just means that for a subset of the partitions the device for one of the replicas will be incorrect, which can be easily worked around.</p>
+<p>&#x73AF;&#x7531;&#x79F0;&#x4E3A;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x7684;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;&#x624B;&#x52A8;&#x6784;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x3002;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x5C06;&#x5206;&#x533A;&#x5206;&#x914D;&#x7ED9;&#x8BBE;&#x5907;&#xFF0C;&#x5E76;&#x5C06;&#x4F18;&#x5316;&#x7684;&#x7ED3;&#x6784;&#x7684;gzip&#x538B;&#x7F29;&#x5E8F;&#x5217;&#x5316;&#x6587;&#x4EF6;&#x5199;&#x5165;&#x78C1;&#x76D8;&#x4E0A;&#xFF0C;&#x4EE5;&#x4FBF;&#x4F20;&#x9001;&#x5230;servers&#x3002;&#x670D;&#x52A1;&#x8FDB;&#x7A0B;&#x5076;&#x5C14;&#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x7684;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x73AF;&#x7ED3;&#x6784;&#x7684;&#x5185;&#x5B58;&#x526F;&#x672C;&#x3002;&#x7531;&#x4E8E;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x7BA1;&#x7406;&#x73AF;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x4F7F;&#x7528;&#x7A0D;&#x5FAE;&#x8F83;&#x65E7;&#x7684;&#x73AF;&#x901A;&#x5E38;&#x53EA;&#x610F;&#x5473;&#x7740;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x5B50;&#x96C6;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x7684;&#x8BBE;&#x5907;&#x5C06;&#x662F;&#x4E0D;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x89E3;&#x51B3;&#x3002;</p>
+<p>The ring-builder also keeps a separate builder file which includes the ring information as well as additional data required to build future rings. It is very important to keep multiple backup copies of these builder files. One option is to copy the builder files out to every server while copying the ring files themselves. Another is to upload the builder files into the cluster itself. Complete loss of a builder file will mean creating a new ring from scratch, nearly all partitions will end up assigned to different devices, and therefore nearly all data stored will have to be replicated to new locations. So, recovery from a builder file loss is possible, but data will definitely be unreachable for an extended time.</p>
+<p>&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x8FD8;&#x4FDD;&#x7559;&#x5355;&#x72EC;&#x7684;&#x6784;&#x5EFA;&#x5668;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x73AF;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x6784;&#x5EFA;&#x672A;&#x6765;&#x73AF;&#x6240;&#x9700;&#x7684;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x3002;&#x4FDD;&#x7559;&#x8FD9;&#x4E9B;&#x6784;&#x5EFA;&#x5668;&#x6587;&#x4EF6;&#x7684;&#x591A;&#x4E2A;&#x5907;&#x4EFD;&#x526F;&#x672C;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;&#x4E00;&#x79CD;&#x9009;&#x62E9;&#x662F;&#x5C06;&#x6784;&#x5EFA;&#x5668;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x540C;&#x65F6;&#x590D;&#x5236;&#x73AF;&#x6587;&#x4EF6;&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x5C06;&#x6784;&#x5EFA;&#x5668;&#x6587;&#x4EF6;&#x4E0A;&#x8F7D;&#x5230;&#x7FA4;&#x96C6;&#x672C;&#x8EAB;&#x3002;&#x5B8C;&#x5168;&#x4E22;&#x5931;&#x6784;&#x5EFA;&#x5668;&#x6587;&#x4EF6;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x521B;&#x5EFA;&#x65B0;&#x73AF;&#xFF0C;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x5206;&#x533A;&#x6700;&#x7EC8;&#x90FD;&#x5C06;&#x5206;&#x914D;&#x7ED9;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x56E0;&#x6B64;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x90FD;&#x5FC5;&#x987B;&#x590D;&#x5236;&#x5230;&#x65B0;&#x4F4D;&#x7F6E;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x6784;&#x5EFA;&#x5668;&#x6587;&#x4EF6;&#x4E22;&#x5931;&#x4E2D;&#x6062;&#x590D;&#xFF0C;&#x4F46;&#x6570;&#x636E;&#x80AF;&#x5B9A;&#x4F1A;&#x5728;&#x8F83;&#x957F;&#x65F6;&#x95F4;&#x5185;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x3002;</p>
+<h2 id="ring-data-structure&#xB6;">Ring Data Structure<a href="#ring-data-structure" title="Permalink to this headline">&#xB6;</a></h2>
+<p>The ring data structure consists of three top level fields: a list of devices in the cluster, a list of lists of device ids indicating partition to device assignments, and an integer indicating the number of bits to shift an MD5 hash to calculate the partition for the hash.</p>
+<p>&#x73AF;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7531;&#x4E09;&#x4E2A;&#x9876;&#x7EA7;&#x5B57;&#x6BB5;&#x7EC4;&#x6210;&#xFF1A;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x8BBE;&#x5907;&#x5217;&#x8868;&#xFF0C;&#x6307;&#x51FA;&#x5206;&#x533A;&#x5206;&#x914D;&#x5230;&#x8BBE;&#x5907;&#x7684;&#x8BBE;&#x5907;ID&#x5217;&#x8868;&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x4E0B;&#x79F0;&#x201C;&#x5206;&#x533A;&#x5206;&#x914D;&#x5217;&#x8868;&#x201D;&#xFF09;&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#xFF0C;&#x8BA1;&#x7B97;&#x5206;&#x533A;&#x54C8;&#x5E0C;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;MD5&#x54C8;&#x5E0C;&#x7684;&#x79FB;&#x4F4D;&#x4F4D;&#x6570;(&#x8BD1;&#x6CE8;&#xFF1A;&#x6E90;&#x7801;&#x4E2D;&#x662F;_part_shift&#xFF0C;&#x914D;&#x7F6E;&#x793A;&#x4F8B;&#x5C31;&#x662F;&#xFF1A;22=32-10)&#x3002;</p>
+<p>&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x6839;&#x636E;&#x4E0B;&#x6587;&#x77E5;&#x9053;&#xFF0C;&#x8FD9;&#x4E09;&#x4E2A;&#x5B57;&#x6BB5;&#x540D;&#xFF0C;&#x5728;&#x6E90;&#x7801;&#x4E2D;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#xFF1A;<code>devs</code>&#xFF0C;<code>_replica2part2dev_id</code>&#xFF0C;<code>_part_shift</code>&#xFF09;</p>
+<h3 id="list-of-devices&#xB6;">List of Devices<a href="#list-of-devices" title="Permalink to this headline">&#xB6;</a></h3>
+<p>The list of devices is known internally to the Ring class as <code>devs</code>. Each item in the list of devices is a dictionary with the following keys:</p>
+<p>Ring&#x7C7B;&#x5185;&#x90E8;&#x5DF2;&#x77E5;&#x8BBE;&#x5907;&#x5217;&#x8868;&#x7528;<code>devs</code>&#x8868;&#x793A;&#x3002;&#x8BBE;&#x5907;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x90FD;&#x662F;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x952E;&#x7684;&#x5B57;&#x5178;&#xFF1A;&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x793A;&#x4F8B;&#x53EF;&#x770B;<a href="../post/analysis-openstack-swift-overview-ring">&#x8FD9;&#x91CC;</a> &#xFF09;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:left">The index into the list of devices.</td>
+</tr>
+<tr>
+<td style="text-align:left">zone</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:left">The zone in which the device resides.</td>
+</tr>
+<tr>
+<td style="text-align:left">region</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:left">The region in which the zone resides.</td>
+</tr>
+<tr>
+<td style="text-align:left">weight</td>
+<td style="text-align:center">float</td>
+<td style="text-align:left">The relative weight of the device in comparison to other devices. This usually corresponds directly to the amount of disk space the device has compared to other devices. For instance a device with 1 terabyte of space might have a weight of 100.0 and another device with 2 terabytes of space might have a weight of 200.0. This weight can also be used to bring back into balance a device that has ended up with more or less data than desired over time. A good average weight of 100.0 allows flexibility in lowering the weight later if necessary.</td>
+</tr>
+<tr>
+<td style="text-align:left">ip</td>
+<td style="text-align:center">string</td>
+<td style="text-align:left">The IP address or hostname of the server containing the device.</td>
+</tr>
+<tr>
+<td style="text-align:left">port</td>
+<td style="text-align:center">int</td>
+<td style="text-align:left">The TCP port on which the server process listens to serve requests for the device.</td>
+</tr>
+<tr>
+<td style="text-align:left">device</td>
+<td style="text-align:center">string</td>
+<td style="text-align:left">The on-disk name of the device on the server. For example: sdb1</td>
+</tr>
+<tr>
+<td style="text-align:left">meta</td>
+<td style="text-align:center">string</td>
+<td style="text-align:left">A general-use field for storing additional information for the device. This information isn&#x2019;t used directly by the server processes, but can be useful in debugging. For example, the date and time of installation and hardware manufacturer could be stored here.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center"></th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:left">&#x7D22;&#x5F15;&#x5230;&#x8BBE;&#x5907;&#x5217;&#x8868;.</td>
+</tr>
+<tr>
+<td style="text-align:left">zone</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:left">The zone in which the device resides.</td>
+</tr>
+<tr>
+<td style="text-align:left">region</td>
+<td style="text-align:center">integer</td>
+<td style="text-align:left">The region in which the zone resides.</td>
+</tr>
+<tr>
+<td style="text-align:left">weight</td>
+<td style="text-align:center">float</td>
+<td style="text-align:left">&#x4E0E;&#x5176;&#x4ED6;&#x8BBE;&#x5907;&#x76F8;&#x6BD4;&#xFF0C;&#x8BBE;&#x5907;&#x7684;&#x76F8;&#x5BF9;&#x91CD;&#x91CF;&#x3002;&#x8FD9;&#x901A;&#x5E38;&#x76F4;&#x63A5;&#x5BF9;&#x5E94;&#x4E8E;&#x8BBE;&#x5907;&#x4E0E;&#x5176;&#x4ED6;&#x8BBE;&#x5907;&#x76F8;&#x6BD4;&#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x91CF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5177;&#x6709;1TB&#x7A7A;&#x95F4;&#x7684;&#x8BBE;&#x5907;&#x53EF;&#x80FD;&#x5177;&#x6709;100.0&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x800C;&#x5177;&#x6709;2TB&#x7A7A;&#x95F4;&#x7684;&#x53E6;&#x4E00;&#x8BBE;&#x5907;&#x53EF;&#x5177;&#x6709;200.0&#x7684;&#x6743;&#x91CD;&#x3002;&#x8FD9;&#x4E2A;&#x6743;&#x91CD;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6062;&#x590D;&#x4E00;&#x4E2A;&#x8BBE;&#x5907;&#xFF0C;&#x8BE5;&#x8BBE;&#x5907;&#x6700;&#x7EC8;&#x4F1A;&#x6709;&#x6BD4;&#x9884;&#x671F;&#x66F4;&#x591A;&#x6216;&#x66F4;&#x5C11;&#x7684;&#x6570;&#x636E;&#x3002;&#x826F;&#x597D;&#x7684;&#x5E73;&#x5747;&#x91CD;&#x91CF;100.0&#x53EF;&#x4EE5;&#x5728;&#x5FC5;&#x8981;&#x65F6;&#x7075;&#x6D3B;&#x5730;&#x964D;&#x4F4E;&#x91CD;&#x91CF;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">ip</td>
+<td style="text-align:center">string</td>
+<td style="text-align:left">&#x5305;&#x542B;&#x8BBE;&#x5907;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7684;IP&#x5730;&#x5740;&#x6216;&#x4E3B;&#x673A;&#x540D;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">port</td>
+<td style="text-align:center">int</td>
+<td style="text-align:left">&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x7A0B;&#x4FA6;&#x542C;&#x7684;TCP&#x7AEF;&#x53E3;&#x4E3A;&#x8BBE;&#x5907;&#x63D0;&#x4F9B;&#x8BF7;&#x6C42;&#x3002;</td>
+</tr>
+<tr>
+<td style="text-align:left">device</td>
+<td style="text-align:center">string</td>
+<td style="text-align:left">&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8BBE;&#x5907;&#x7684;&#x78C1;&#x76D8;&#x540D;&#x79F0;&#x3002;&#x4F8B;&#x5982;&#xFF1A;sdb1</td>
+</tr>
+<tr>
+<td style="text-align:left">meta</td>
+<td style="text-align:center">string</td>
+<td style="text-align:left">&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7684;&#x9644;&#x52A0;&#x4FE1;&#x606F;&#x7684;&#x901A;&#x7528;&#x5B57;&#x6BB5;&#x3002;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x7A0B;&#x4E0D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6B64;&#x4FE1;&#x606F;&#xFF0C;&#x4F46;&#x5728;&#x8C03;&#x8BD5;&#x65F6;&#x53EF;&#x80FD;&#x5F88;&#x6709;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5B89;&#x88C5;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x4EE5;&#x53CA;&#x786C;&#x4EF6;&#x5236;&#x9020;&#x5546;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x5728;&#x6B64;&#x5904;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>Note</p>
+<p>The list of devices may contain holes, or indexes set to <code>None</code>, for devices that have been removed from the cluster. However, device ids are reused. Device ids are reused to avoid potentially running out of device id slots when there are available slots (from prior removal of devices). A consequence of this device id reuse is that the device id (integer value) does not necessarily correspond with the chronology of when the device was added to the ring. Also, some devices may be temporarily disabled by setting their weight to <code>0.0</code>. To obtain a list of active devices (for uptime polling, for example) the Python code would look like:</p>
+<pre class="language-"><code class="lang-python">devices <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>_iter_devs<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;</p>
+<p>&#x5BF9;&#x4E8E;&#x5DF2;&#x4ECE;&#x7FA4;&#x96C6;&#x4E2D;&#x5220;&#x9664;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x8BBE;&#x5907;&#x5217;&#x8868;&#x53EF;&#x80FD;&#x5305;&#x542B;holes&#x6216;&#x7D22;&#x5F15;&#x8BBE;&#x7F6E;&#x4E3A;<code>None</code>&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8BBE;&#x5907;ID&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x3002;&#x91CD;&#x65B0;&#x4F7F;&#x7528;&#x8BBE;&#x5907;ID&#x4EE5;&#x907F;&#x514D;&#x5728;&#x6709;&#x53EF;&#x7528;&#x63D2;&#x69FD;&#xFF08;&#x4ECE;&#x5148;&#x524D;&#x79FB;&#x9664;&#x8BBE;&#x5907;&#xFF09;&#x65F6;&#x53EF;&#x80FD;&#x8017;&#x5C3D;&#x8BBE;&#x5907;ID&#x63D2;&#x69FD;&#x3002;&#x6B64;&#x8BBE;&#x5907;ID&#x91CD;&#x7528;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x8BBE;&#x5907;ID&#xFF08;&#x6574;&#x6570;&#x503C;&#xFF09;&#x4E0D;&#x4E00;&#x5B9A;&#x4E0E;&#x8BBE;&#x5907;&#x6DFB;&#x52A0;&#x5230;&#x73AF;&#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x987A;&#x5E8F;&#x76F8;&#x5BF9;&#x5E94;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C06;&#x5176;&#x6743;&#x91CD;&#x8BBE;&#x7F6E;&#x4E3A; <code>0.0</code>&#x4EE5;&#x6682;&#x65F6;&#x7981;&#x7528;&#x67D0;&#x4E9B;&#x8BBE;&#x5907;&#x3002;&#x8981;&#x83B7;&#x53D6;&#x6D3B;&#x52A8;&#x8BBE;&#x5907;&#x5217;&#x8868;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x7528;&#x4E8E;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x8F6E;&#x8BE2;&#xFF09;&#xFF0C;Python&#x4EE3;&#x7801;&#x5C06;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">devices <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>_iter_devs<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="partition-assignment-list&#xB6;">Partition Assignment List<a href="#partition-assignment-list" title="Permalink to this headline">&#xB6;</a></h3>
+<p>The partition assignment list is known internally to the Ring class as <code>_replica2part2dev_id</code>. This is a list of <code>array(&apos;H&apos;)</code>s, one for each replica. Each <code>array(&apos;H&apos;)</code> has a length equal to the partition count for the ring. Each integer in the <code>array(&apos;H&apos;)</code> is an index into the above list of devices.</p>
+<p>&#x5206;&#x533A;&#x5206;&#x914D;&#x5217;&#x8868;&#x5728;Ring&#x7C7B;&#x5185;&#x90E8;&#x8868;&#x793A;&#x4E3A; <code>_replica2part2dev_id</code>&#x3002;&#x8FD9;&#x662F;<code>array(&apos;H&apos;)</code>&#x7684;&#x5217;&#x8868;&#xFF08;list&#xFF09;&#xFF0C;&#x6BCF;&#x4E2A;&#x526F;&#x672C;&#x4E00;&#x4E2A;&#x3002;&#x6BCF;&#x4E2A;<code>array(&apos;H&apos;)</code>&#x7684;&#x957F;&#x5EA6;&#x7B49;&#x4E8E;&#x73AF;&#x7684;&#x5206;&#x533A;&#x6570;&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x5B89;&#x88C5;&#x793A;&#x4F8B;&#x4E3A;&#xFF1A;1024=2**10&#xFF09;&#x3002;&#x5176;&#x4E2D;&#x7684;<code>array(&apos;H&apos;)</code>&#x4E0A;&#x7684;&#x6BCF;&#x4E2A;&#x6574;&#x6570;&#x90FD;&#x662F;&#x4E0A;&#x8FF0;&#x7684;&#x8BBE;&#x5907;&#x5217;&#x8868;&#x7684;&#x7D22;&#x5F15;&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x4E5F;&#x5C31;&#x662F;&#x4E0A;&#x9762; List of Devices &#x5C0F;&#x8282;&#x4E2D;&#x7684;&#x8868;&#x4E2D;&#x7684;ID&#x5B57;&#x6BB5;&#x503C;&#xFF09;&#x3002;</p>
+<p>So, to create a list of device dictionaries assigned to a partition, the Python code would look like:</p>
+<pre class="language-"><code class="lang-python">devices <span class="token operator">=</span> <span class="token punctuation">[</span>self<span class="token punctuation">.</span>devs<span class="token punctuation">[</span>part2dev_id<span class="token punctuation">[</span>partition<span class="token punctuation">]</span><span class="token punctuation">]</span>
+           <span class="token keyword">for</span> part2dev_id <span class="token keyword">in</span> self<span class="token punctuation">.</span>_replica2part2dev_id<span class="token punctuation">]</span>
+</code></pre>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x521B;&#x5EFA;&#x5206;&#x914D;&#x7ED9;&#x5206;&#x533A;&#x7684;&#x8BBE;&#x5907;&#x5217;&#x8868;&#x7684;&#x5B57;&#x5178;&#xFF0C;Python&#x4EE3;&#x7801;&#x5C06;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">devices <span class="token operator">=</span> <span class="token punctuation">[</span>self<span class="token punctuation">.</span>devs<span class="token punctuation">[</span>part2dev_id<span class="token punctuation">[</span>partition<span class="token punctuation">]</span><span class="token punctuation">]</span>
+           <span class="token keyword">for</span> part2dev_id <span class="token keyword">in</span> self<span class="token punctuation">.</span>_replica2part2dev_id<span class="token punctuation">]</span>
+</code></pre>
+<p><code>array(&apos;H&apos;)</code> is used for memory conservation as there may be millions of partitions.</p>
+<p><code>array(&apos;H&apos;)</code> &#x7528;&#x4E8E;&#x5185;&#x5B58;&#x4FDD;&#x62A4;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x80FD;&#x6709;&#x6570;&#x767E;&#x4E07;&#x4E2A;&#x5206;&#x533A;&#x3002;</p>
+<h3 id="partition-shift-value&#xB6;">Partition Shift Value<a href="#partition-shift-value" title="Permalink to this headline">&#xB6;</a></h3>
+<p>The partition shift value is known internally to the Ring class as <code>_part_shift</code>. This value is used to shift an MD5 hash of an item&#x2019;s path to calculate the partition on which the data for that item should reside. Only the top four bytes of the hash are used in this process. For example, to compute the partition for the path <code>/account/container/object</code>, the Python code might look like:</p>
+<pre class="language-"><code class="lang-python">objhash <span class="token operator">=</span> md5<span class="token punctuation">(</span><span class="token string">&apos;/account/container/object&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>digest<span class="token punctuation">(</span><span class="token punctuation">)</span>
+partition <span class="token operator">=</span> struct<span class="token punctuation">.</span>unpack_from<span class="token punctuation">(</span><span class="token string">&apos;&gt;I&apos;</span><span class="token punctuation">,</span> objhash<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&gt;&gt;</span> self<span class="token punctuation">.</span>_part_shift
+</code></pre>
+<p>&#x5206;&#x533A;&#x79FB;&#x4F4D;&#x503C;&#x5728;Ring&#x7C7B;&#x5185;&#x90E8;&#x4E3A; <code>_part_shift</code>&#x3002;&#x6B64;&#x503C;&#x7528;&#x4E8E;&#x79FB;&#x52A8;&#x9879;&#x76EE;&#x8DEF;&#x5F84;&#x7684;MD5&#x54C8;&#x5E0C;&#x503C;&#xFF0C;&#x4EE5;&#x8BA1;&#x7B97;&#x8BE5;&#x9879;&#x76EE;&#x7684;&#x6570;&#x636E;&#x5E94;&#x9A7B;&#x7559;&#x5728;&#x7684;&#x5206;&#x533A;&#x3002;&#x5728;&#x6B64;&#x8FC7;&#x7A0B;&#x4E2D;&#x4EC5;&#x4F7F;&#x7528;&#x6563;&#x5217;&#x7684;&#x524D;&#x56DB;&#x4E2A;&#x5B57;&#x8282;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x8BA1;&#x7B97;&#x8DEF;&#x5F84;&#x7684;&#x5206;&#x533A;<code>/account/container/object</code>&#xFF0C;Python&#x4EE3;&#x7801;&#x53EF;&#x80FD;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-python">objhash <span class="token operator">=</span> md5<span class="token punctuation">(</span><span class="token string">&apos;/account/container/object&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>digest<span class="token punctuation">(</span><span class="token punctuation">)</span>
+partition <span class="token operator">=</span> struct<span class="token punctuation">.</span>unpack_from<span class="token punctuation">(</span><span class="token string">&apos;&gt;I&apos;</span><span class="token punctuation">,</span> objhash<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&gt;&gt;</span> self<span class="token punctuation">.</span>_part_shift
+</code></pre>
+<p>For a ring generated with partition power <code>P</code>, the partition shift value is <code>32 - P</code>.</p>
+<p>&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x5206;&#x533A;&#x529F;&#x7387;<code>P</code>&#x751F;&#x6210;&#x7684;&#x73AF;&#xFF0C;&#x5206;&#x533A;&#x79FB;&#x4F4D;&#x503C;&#x4E3A;<code>32 - P</code> &#x3002;</p>
+<h3 id="fractional-replicas&#xB6;">Fractional Replicas<a href="#fractional-replicas" title="Permalink to this headline">&#xB6;</a></h3>
+<p>A ring is not restricted to having an integer number of replicas. In order to support the gradual changing of replica counts, the ring is able to have a real number of replicas.</p>
+<p>&#x73AF;&#x4E0D;&#x9650;&#x4E8E;&#x5177;&#x6709;&#x6574;&#x6570;&#x4E2A;&#x526F;&#x672C;&#x3002;&#x4E3A;&#x4E86;&#x652F;&#x6301;&#x526F;&#x672C;&#x8BA1;&#x6570;&#x7684;&#x9010;&#x6E10;&#x53D8;&#x5316;&#xFF0C;&#x73AF;&#x80FD;&#x591F;&#x5177;&#x6709;&#x5B9E;&#x6570;&#x503C;&#x7684;&#x526F;&#x672C;&#x3002;</p>
+<p>When the number of replicas is not an integer, the last element of <code>_replica2part2dev_id</code> will have a length that is less than the partition count for the ring. This means that some partitions will have more replicas than others. For example, if a ring has <code>3.25</code> replicas, then 25% of its partitions will have four replicas, while the remaining 75% will have just three.</p>
+<p>&#x5F53;&#x526F;&#x672C;&#x7684;&#x6570;&#x91CF;&#x4E0D;&#x662F;&#x6574;&#x6570;&#x65F6;&#xFF0C;<code>_replica2part2dev_id</code> &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x957F;&#x5EA6;&#x5C06;&#x5C0F;&#x4E8E;&#x73AF;&#x7684;&#x5206;&#x533A;&#x6570;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x67D0;&#x4E9B;&#x5206;&#x533A;&#x5C06;&#x5177;&#x6709;&#x6BD4;&#x5176;&#x4ED6;&#x5206;&#x533A;&#x66F4;&#x591A;&#x7684;&#x526F;&#x672C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x73AF;&#x6709;3.25&#x526F;&#x672C;&#xFF0C;&#x90A3;&#x4E48;&#x5176;25&#xFF05;&#x7684;&#x5206;&#x533A;&#x5C06;&#x6709;&#x56DB;&#x4E2A;&#x526F;&#x672C;&#xFF0C;&#x800C;&#x5269;&#x4E0B;&#x7684;75&#xFF05;&#x5C06;&#x53EA;&#x6709;&#x4E09;&#x4E2A;&#x526F;&#x672C;&#x3002;</p>
+<p>&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;3.25 = 4<em>0.25 + 3</em>0.75&#xFF09;</p>
+<h3 id="dispersion&#xB6;">Dispersion<a href="#dispersion" title="Permalink to this headline">&#xB6;</a></h3>
+<p>With each rebalance, the ring builder calculates a dispersion metric. This is the percentage of partitions in the ring that have too many replicas within a particular failure domain.</p>
+<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x91CD;&#x65B0;&#x5E73;&#x8861;&#xFF0C;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x8BA1;&#x7B97;&#x5206;&#x6563;&#x5EA6;&#x3002;&#x8FD9;&#x662F;&#x73AF;&#x4E2D;&#x5177;&#x6709;&#x7279;&#x5B9A;&#x6545;&#x969C;&#x57DF;&#x5185;&#x592A;&#x591A;&#x526F;&#x672C;&#x7684;&#x5206;&#x533A;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</p>
+<p>For example, if you have three servers in a cluster but two replicas for a partition get placed onto the same server, that partition will count towards the dispersion metric.</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x7FA4;&#x96C6;&#x4E2D;&#x6709;&#x4E09;&#x53F0;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4F46;&#x5206;&#x533A;&#x7684;&#x4E24;&#x4E2A;&#x526F;&#x672C;&#x653E;&#x7F6E;&#x5728;&#x540C;&#x4E00;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x5219;&#x8BE5;&#x5206;&#x533A;&#x5C06;&#x8BA1;&#x5165;&#x5206;&#x6563;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#x3002;</p>
+<p>&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x5206;&#x533A;&#xFF0C;&#x5E76;&#x4E0D;&#x5206;&#x6563;&#xFF09;</p>
+<p>A lower dispersion value is better, and the value can be used to find the proper value for &#x201C;overload&#x201D;.</p>
+<p>&#x8F83;&#x4F4E;&#x7684;&#x5206;&#x6563;&#x5EA6;&#x66F4;&#x597D;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x503C;&#x53EF;&#x7528;&#x4E8E;&#x627E;&#x5230;&#x201C;overload&#x201D;&#x7684;&#x9002;&#x5F53;&#x503C;&#x3002;</p>
+<h3 id="overload&#xB6;">Overload<a href="#overload" title="Permalink to this headline">&#xB6;</a></h3>
+<p>The ring builder tries to keep replicas as far apart as possible while still respecting device weights. When it can&#x2019;t do both, the overload factor determines what happens. Each device may take some extra fraction of its desired partitions to allow for replica dispersion; once that extra fraction is exhausted, replicas will be placed closer together than is optimal for durability.</p>
+<p>&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x5C1D;&#x8BD5;&#x5C3D;&#x53EF;&#x80FD;&#x8FDC;&#x79BB;replicas&#xFF0C;&#x540C;&#x65F6;&#x4ECD;&#x7136;&#x5C0A;&#x91CD;&#x8BBE;&#x5907;weights&#x3002;&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x505A;&#x5230;&#x8FD9;&#x4E24;&#x70B9;&#xFF0C;overload&#x51B3;&#x5B9A;&#x4E86;&#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#x3002;&#x6BCF;&#x4E2A;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x5360;&#x7528;&#x5176;&#x6240;&#x9700;&#x5206;&#x533A;&#x7684;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x90E8;&#x5206;&#x4EE5;&#x5141;&#x8BB8;&#x590D;&#x5236;&#x54C1;&#x5206;&#x6563;; &#x4E00;&#x65E6;&#x989D;&#x5916;&#x7684;&#x90E8;&#x5206;&#x8017;&#x5C3D;&#xFF0C;&#x590D;&#x5236;&#x54C1;&#x5C06;&#x88AB;&#x653E;&#x7F6E;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;&#x8010;&#x4E45;&#x6027;&#x3002;</p>
+<p>Essentially, the overload factor lets the operator trade off replica dispersion (durability) against device balance (uniform disk usage).</p>
+<p>&#x4ECE;&#x672C;&#x8D28;&#x4E0A;&#x8BB2;&#xFF0C;&#x8FC7;&#x8F7D;&#x56E0;&#x5B50;&#x53EF;&#x4EE5;&#x8BA9;&#x64CD;&#x4F5C;&#x5458;&#x5728;&#x8BBE;&#x5907;&#x5E73;&#x8861;&#xFF08;&#x7EDF;&#x4E00;&#x78C1;&#x76D8;&#x4F7F;&#x7528;&#x7387;&#xFF09;&#x4E4B;&#x95F4;&#x6743;&#x8861;&#x590D;&#x5236;&#x5206;&#x6563;&#xFF08;&#x8010;&#x4E45;&#x6027;&#xFF09;&#x3002;</p>
+<p>The default overload factor is <code>0</code>, so device weights will be strictly followed.</p>
+<p>&#x9ED8;&#x8BA4;&#x7684;&#x8FC7;&#x8F7D;&#x56E0;&#x5B50;&#x662F;<code>0</code>&#xFF0C;&#x56E0;&#x6B64;&#x5C06;&#x4E25;&#x683C;&#x9075;&#x5FAA;&#x8BBE;&#x5907;&#x6743;&#x91CD;&#x3002;</p>
+<p>With an overload factor of <code>0.1</code>, each device will accept 10% more partitions than it otherwise would, but only if needed to maintain dispersion.</p>
+<p>&#x5728;&#x8FC7;&#x8F7D;&#x56E0;&#x5B50;&#x7684;&#x60C5;&#x51B5;&#x4E0B;<code>0.1</code>&#xFF0C;&#x6BCF;&#x4E2A;&#x8BBE;&#x5907;&#x5C06;&#x63A5;&#x53D7;&#x6BD4;&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#x591A;10&#xFF05;&#x7684;&#x5206;&#x533A;&#xFF0C;&#x4F46;&#x4EC5;&#x5728;&#x9700;&#x8981;&#x4FDD;&#x6301;&#x5206;&#x6563;&#x65F6;&#x3002;</p>
+<p>Example: Consider a 3-node cluster of machines with equal-size disks; let node A have 12 disks, node B have 12 disks, and node C have only 11 disks. Let the ring have an overload factor of <code>0.1</code> (10%).</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;&#x8003;&#x8651;&#x5177;&#x6709;&#x76F8;&#x7B49;&#x5927;&#x5C0F;&#x78C1;&#x76D8;&#x7684;3&#x8282;&#x70B9;&#x8BA1;&#x7B97;&#x673A;&#x7FA4;&#x96C6;; &#x8BA9;&#x8282;&#x70B9;A&#x6709;12&#x4E2A;&#x78C1;&#x76D8;&#xFF0C;&#x8282;&#x70B9;B&#x6709;12&#x4E2A;&#x78C1;&#x76D8;&#xFF0C;&#x8282;&#x70B9;C&#x53EA;&#x6709;11&#x4E2A;&#x78C1;&#x76D8;&#x3002;&#x8BA9;&#x73AF;&#x7684;&#x8FC7;&#x8F7D;&#x7CFB;&#x6570;&#x4E3A;0.1&#xFF08;10&#xFF05;&#xFF09;&#x3002;</p>
+<p>Without the overload, some partitions would end up with replicas only on nodes A and B. However, with the overload, every device is willing to accept up to 10% more partitions for the sake of dispersion. The missing disk in C means there is one disk&#x2019;s worth of partitions that would like to spread across the remaining 11 disks, which gives each disk in C an extra 9.09% load. Since this is less than the 10% overload, there is one replica of each partition on each node.</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FC7;&#x8F7D;&#xFF0C;&#x4E00;&#x4E9B;&#x5206;&#x533A;&#x6700;&#x7EC8;&#x53EA;&#x4F1A;&#x5728;&#x8282;&#x70B9;A&#x548C;B&#x4E0A;&#x51FA;&#x73B0;&#x526F;&#x672C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x7531;&#x4E8E;&#x8FC7;&#x8F7D;&#xFF0C;&#x6BCF;&#x4E2A;&#x8BBE;&#x5907;&#x90FD;&#x613F;&#x610F;&#x4E3A;&#x4E86;&#x5206;&#x6563;&#x800C;&#x63A5;&#x53D7;&#x591A;&#x8FBE;10&#xFF05;&#x7684;&#x5206;&#x533A;&#x3002;C&#x4E2D;&#x4E22;&#x5931;&#x7684;&#x78C1;&#x76D8;&#x610F;&#x5473;&#x7740;&#x6709;&#x4E00;&#x4E2A;&#x78C1;&#x76D8;&#x7684;&#x5206;&#x533A;&#x503C;&#x8981;&#x5206;&#x5E03;&#x5728;&#x5269;&#x4F59;&#x7684;11&#x4E2A;&#x78C1;&#x76D8;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E3A;C&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x78C1;&#x76D8;&#x63D0;&#x4F9B;&#x4E86;&#x989D;&#x5916;&#x7684;9.09&#xFF05;&#x8D1F;&#x8F7D;&#x3002;&#x7531;&#x4E8E;&#x8FD9;&#x5C0F;&#x4E8E;10&#xFF05;&#x7684;&#x8FC7;&#x8F7D;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x3002;</p>
+<p>However, this does mean that the disks in node C will have more data on them than the disks in nodes A and B. If 80% full is the warning threshold for the cluster, node C&#x2019;s disks will reach 80% full while A and B&#x2019;s disks are only 72.7% full.</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x786E;&#x5B9E;&#x610F;&#x5473;&#x7740;&#x8282;&#x70B9;C&#x4E2D;&#x7684;&#x78C1;&#x76D8;&#x5C06;&#x62E5;&#x6709;&#x6BD4;&#x8282;&#x70B9;A&#x548C;B&#x4E2D;&#x7684;&#x78C1;&#x76D8;&#x66F4;&#x591A;&#x7684;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;80&#xFF05;&#x5DF2;&#x6EE1;&#x662F;&#x7FA4;&#x96C6;&#x7684;&#x8B66;&#x544A;&#x9608;&#x503C;&#xFF0C;&#x5219;&#x8282;&#x70B9;C&#x7684;&#x78C1;&#x76D8;&#x5C06;&#x8FBE;&#x5230;80&#xFF05;&#x6EE1;&#xFF0C;&#x800C;A&#x548C;B&#x7684;&#x78C1;&#x76D8;&#x53EA;&#x6709;72.7&#xFF05;&#x5DF2;&#x6EE1;&#x3002;</p>
+<h2 id="partition--replica-terminology&#xB6;">Partition &amp; Replica Terminology<a href="#partition-replica-terminology" title="Permalink to this headline">&#xB6;</a></h2>
+<p>All descriptions of consistent hashing describe the process of breaking the keyspace up into multiple ranges (vnodes, buckets, etc.) - many more than the number of &#x201C;nodes&#x201D; to which keys in the keyspace must be assigned. Swift calls these ranges partitions - they are partitions of the total keyspace.</p>
+<p>&#x6240;&#x6709;&#x5173;&#x4E8E;&#x4E00;&#x81F4;&#x6027;&#x6563;&#x5217;&#x7684;&#x63CF;&#x8FF0;&#x90FD;&#x63CF;&#x8FF0;&#x4E86;&#x5C06;&#x952E;&#x7A7A;&#x95F4;&#xFF08;keyspace&#xFF09;&#x5206;&#x89E3;&#x4E3A;&#x591A;&#x4E2A;&#x8303;&#x56F4;&#xFF08;vnode&#xFF0C;buckets&#x7B49;&#xFF09;&#x7684;&#x8FC7;&#x7A0B; - &#x6BD4;&#x5FC5;&#x987B;&#x5206;&#x914D;&#x952E;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&#x952E;&#x7684;&#x201C;&#x8282;&#x70B9;&#x201D;&#x7684;&#x6570;&#x91CF;&#x591A;&#x5F97;&#x591A;&#x3002;Swift&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x8303;&#x56F4;&#x5206;&#x533A; - &#x5B83;&#x4EEC;&#x662F;&#x603B;&#x952E;&#x7A7A;&#x95F4;&#x7684;&#x5206;&#x533A;&#x3002;</p>
+<p>Each partition will have multiple replicas. Every replica of each partition must be assigned to a device in the ring. When describing a specific replica of a partition (like when it&#x2019;s assigned a device) it is described as a part-replica in that it is a specific replica of the specific partition. A single device will likely be assigned different replicas from many partitions, but it may not be assigned multiple replicas of a single partition.</p>
+<p>&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x90FD;&#x6709;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x3002;&#x5FC5;&#x987B;&#x5C06;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x6BCF;&#x4E2A;&#x526F;&#x672C;&#x5206;&#x914D;&#x7ED9;&#x73AF;&#x4E2D;&#x7684;&#x8BBE;&#x5907;&#x3002;&#x5728;&#x63CF;&#x8FF0;&#x5206;&#x533A;&#x7684;&#x7279;&#x5B9A;&#x526F;&#x672C;&#x65F6;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x5B83;&#x88AB;&#x5206;&#x914D;&#x8BBE;&#x5907;&#x65F6;&#xFF09;&#xFF0C;&#x5B83;&#x88AB;&#x63CF;&#x8FF0;&#x4E3A; &#x90E8;&#x5206;&#x526F;&#x672C;(part-replica)&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x7279;&#x5B9A;&#x5206;&#x533A;&#x7684;&#x7279;&#x5B9A;&#x526F;&#x672C;&#x3002;&#x5355;&#x4E2A;&#x8BBE;&#x5907;&#x53EF;&#x80FD;&#x4F1A;&#x4ECE;&#x8BB8;&#x591A;&#x5206;&#x533A;&#x5206;&#x914D;&#x4E0D;&#x540C;&#x7684;&#x526F;&#x672C;&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x4E3A;&#x5355;&#x4E2A;&#x5206;&#x533A;&#x5206;&#x914D;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x3002;</p>
+<p>(&#x8BD1;&#x6CE8;&#xFF1A;&#x8FD9;&#x4E2A;&#x662F;&#x80AF;&#x5B9A;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#xFF0C;&#x521B;&#x9020;&#x51FA; partition&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x5355;&#x4E2A;&#x8BBE;&#x5907;&#x5B58;&#x653E;&#x591A;&#x4E2A;partition&#x3002;&#x800C;&#x5355;&#x4E2A;partition&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684; partition index&#xFF0C;&#x540C;&#x65F6;&#xFF1A;&#x5728;xfs&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x6709;2&#x4E2A;&#x540C;&#x540D;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6240;&#x4EE5;&#x5355;&#x4E2A;&#x8BBE;&#x5907;&#x4E0D;&#x4F1A;&#x4E3A;&#x5355;&#x4E2A;&#x5206;&#x533A;&#x5206;&#x914D;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x3002;&#x5728;&#x4E0A;&#x9762;&#x63D0;&#x8FC7;&#x7684;<a href="https://b.qqbb.app/post/analysis-openstack-swift-overview-ring/" target="_blank">&#x793A;&#x4F8B;&#x4E2D;</a>&#xFF0C;&#x5728;<code>/src/node/sdb/objects/</code>&#x4E0B;&#xFF0C;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x6709;&#x591A;&#x4E2A;partiton index&#x4E3A;<code>119</code>&#x7684;&#x6587;&#x4EF6;&#x5939;)</p>
+<p>The total number of partitions in a ring is calculated as <code>2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>. The total number of part-replicas in a ring is calculated as <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica-count</span><span class="token punctuation">&gt;</span></span> * 2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>.</p>
+<p>&#x73AF;&#x4E2D;&#x5206;&#x533A;&#x7684;&#x603B;&#x6570;&#x8BA1;&#x7B97;&#x4E3A;<code>2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>&#x3002;&#x73AF;&#x4E2D;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x603B;&#x6570;&#x8BA1;&#x7B97;&#x4E3A;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>replica-count</span><span class="token punctuation">&gt;</span></span> * 2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code> &#x3002;&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x5B89;&#x88C5;&#x793A;&#x4F8B;&#xFF0C;&#x5206;&#x533A;&#x603B;&#x6570;:<code>2**10</code>&#xFF0C;part-replicas&#x603B;&#x6570;&#x4E3A; <code>3*2**10</code>)</p>
+<p>When considering a device&#x2019;s weight it is useful to describe the number of part-replicas it would like to be assigned. A single device, regardless of weight, will never hold more than <code>2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code> part-replicas because it can not have more than one replica of any partition assigned. The number of part-replicas a device can take by weights is calculated as its parts-wanted. The true number of part-replicas assigned to a device can be compared to its parts-wanted similarly to a calculation of percentage error - this deviation in the observed result from the idealized target is called a device&#x2019;s balance.</p>
+<p>&#x5728;&#x8003;&#x8651;&#x8BBE;&#x5907;&#x7684;&#x6743;&#x91CD;&#x65F6;&#xFF0C;&#x63CF;&#x8FF0;&#x5B83;&#x5E0C;&#x671B;&#x5206;&#x914D;&#x7684;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x6570;&#x91CF;&#x662F;&#x6709;&#x7528;&#x7684;&#x3002;&#x65E0;&#x8BBA;weight&#x5982;&#x4F55;&#xFF0C;&#x5355;&#x4E2A;&#x8BBE;&#x5907;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x8D85;&#x8FC7;<code>2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>&#x4E2A;&#x90E8;&#x5206;&#x526F;&#x672C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0D;&#x80FD;&#x5206;&#x914D;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x7ED9;&#x540C;&#x4E00;&#x4E2A;&#x8BBE;&#x5907;&#x3002;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x6309;weights&#x8BA1;&#x7B97;&#x7684;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x6570;&#x91CF;&#x6309;&#x5176;parts-wanted&#x8BA1;&#x7B97;&#x3002;&#x5206;&#x914D;&#x7ED9;&#x8BBE;&#x5907;&#x7684;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x771F;&#x5B9E;&#x6570;&#x91CF;&#x53EF;&#x4EE5;&#x4E0E;&#x5176;parts-wanted&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x8BA1;&#x7B97;&#x767E;&#x5206;&#x6BD4;&#x8BEF;&#x5DEE; - &#x89C2;&#x5BDF;&#x7ED3;&#x679C;&#x4E0E;&#x7406;&#x60F3;&#x76EE;&#x6807;&#x7684;&#x504F;&#x5DEE;&#x79F0;&#x4E3A;&#x8BBE;&#x5907;&#x5E73;&#x8861;&#xFF08;balance&#xFF09;&#x3002;</p>
+<p>When considering a device&#x2019;s failure domain it is useful to describe the number of part-replicas it would like to be assigned. The number of part-replicas wanted in a failure domain of a tier is the sum of the part-replicas wanted in the failure domains of its sub-tier. However, collectively when the total number of part-replicas in a failure domain exceeds or is equal to <code>2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code> it is most obvious that it&#x2019;s no longer sufficient to consider only the number of total part-replicas, but rather the fraction of each replica&#x2019;s partitions. Consider for example a ring with 3 replicas and 3 servers: while dispersion requires that each server hold only &#x2153; of the total part-replicas, placement is additionally constrained to require <code>1.0</code> replica of <em>each</em> partition per server. It would not be sufficient to satisfy dispersion if two devices on one of the servers each held a replica of a single partition, while another server held none. By considering a decimal fraction of one replica&#x2019;s worth of partitions in a failure domain we can derive the total part-replicas wanted in a failure domain (<code>1.0 * 2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>). Additionally we infer more about which part-replicas must go in the failure domain. Consider a ring with three replicas and two zones, each with two servers (four servers total). The three replicas worth of partitions will be assigned into two failure domains at the zone tier. Each zone must hold more than one replica of some partitions. We represent this improper fraction of a replica&#x2019;s worth of partitions in decimal form as <code>1.5</code> (<code>3.0 / 2</code>). This tells us not only the <em>number</em> of total partitions (<code>1.5 * 2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>) but also that <em>each</em> partition must have at least one replica in this failure domain (in fact <code>0.5</code> of the partitions will have 2 replicas). Within each zone the two servers will hold <code>0.75</code> of a replica&#x2019;s worth of partitions - this is equal both to &#x201C;the fraction of a replica&#x2019;s worth of partitions assigned to each zone (<code>1.5</code>) divided evenly among the number of failure domains in its sub-tier (2 servers in each zone, i.e. <code>1.5 / 2</code>)&#x201D; but <em>also</em> &#x201C;the total number of replicas (<code>3.0</code>) divided evenly among the total number of failure domains in the server tier (2 servers &#xD7; 2 zones = 4, i.e. <code>3.0 / 4</code>)&#x201D;. It is useful to consider that each server in this ring will hold only <code>0.75</code> of a replica&#x2019;s worth of partitions which tells that any server should have at most one replica of a given partition assigned. In the interests of brevity, some variable names will often refer to the concept representing the fraction of a replica&#x2019;s worth of partitions in decimal form as <em>replicanths</em> - this is meant to invoke connotations similar to ordinal numbers as applied to fractions, but generalized to a replica instead of a four*th* or a fif*th*. The &#x201C;n&#x201D; was probably thrown in because of Blade Runner.</p>
+<p>&#x5728;&#x8003;&#x8651;&#x8BBE;&#x5907;&#x7684;&#x6545;&#x969C;&#x57DF;&#x65F6;&#xFF0C;&#x63CF;&#x8FF0;&#x5B83;&#x5E0C;&#x671B;&#x5206;&#x914D;&#x7684;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x6570;&#x91CF;&#x662F;&#x6709;&#x7528;&#x7684;&#x3002;&#x5728;&#x5C42;&#x7684;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x9700;&#x8981;&#x7684;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x6570;&#x91CF;&#x662F;&#x5176;&#x5B50;&#x5C42;&#x7684;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x6240;&#x9700;&#x7684;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x603B;&#x548C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5F53;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x7684;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x603B;&#x6570;&#x8D85;&#x8FC7;&#x6216;&#x7B49;&#x4E8E;<code>2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>&#x65F6;&#xFF0C;&#x6700;&#x660E;&#x663E;&#x7684;&#x662F;&#xFF0C;&#x4EC5;&#x8003;&#x8651;&#x603B;&#x90E8;&#x5206;&#x526F;&#x672C;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4EC5;&#x8003;&#x8651;&#x6BCF;&#x4E2A;&#x526F;&#x672C;&#x7684;&#x5206;&#x533A;&#x7684;&#x5206;&#x6570;&#xFF0C;&#x8FD9;&#x5DF2;&#x7ECF;&#x4E0D;&#x591F;&#x4E86;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x5177;&#x6709;3&#x4E2A;&#x526F;&#x672C;&#x548C;3&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x73AF;&#xFF1A;&#x867D;&#x7136;&#x5206;&#x6563;&#x5EA6;&#x8981;&#x6C42;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4EC5;&#x4FDD;&#x7559;&#x603B;&#x90E8;&#x5206;&#x526F;&#x672C;&#x4E2D;&#x7684;1/3&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x53E6;&#x5916;&#xFF0C;placement&#x5FC5;&#x987B;&#x9650;&#x5236;&#x4E3A; <em>each</em> &#x670D;&#x52A1;&#x5668;&#x9700;&#x8981;<code>1.0</code>&#x4E2A;&#x526F;&#x672C;&#x3002;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x4E24;&#x4E2A;&#x8BBE;&#x5907;&#x90FD;&#x62E5;&#x6709;&#x5355;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x526F;&#x672C;&#xFF0C;&#x800C;&#x53E6;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x6CA1;&#x6709;&#x4FDD;&#x7559;&#xFF0C;&#x5219;&#x662F;&#x4E0D;&#x591F;&#x6EE1;&#x8DB3;&#x5206;&#x6563;&#x5EA6;&#x7684;&#x3002;&#x901A;&#x8FC7;&#x8003;&#x8651;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x7684;&#x5206;&#x533A;&#x7684;&#x5C0F;&#x6570;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BFC;&#x51FA;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x6240;&#x9700;&#x7684;&#x603B;&#x90E8;&#x5206;&#x526F;&#x672C;(<code>1.0 * 2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>)&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x66F4;&#x591A;&#x5730;&#x63A8;&#x65AD;&#x51FA;&#x54EA;&#x4E9B;&#x90E8;&#x5206;&#x526F;&#x672C;&#x5FC5;&#x987B;&#x5728;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x8FDB;&#x884C;&#x3002;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x4E09;&#x4E2A;&#x526F;&#x672C;&#x548C;&#x4E24;&#x4E2A;zones&#x7684;&#x73AF;&#xFF0C;&#x6BCF;&#x4E2A;zones&#x6709;&#x4E24;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x603B;&#x5171;&#x56DB;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#xFF09;&#x3002;&#x4E09;&#x4E2A;&#x526F;&#x672C;&#x7684;&#x5206;&#x533A;&#x5C06;&#x5206;&#x914D;&#x5230;zones&#x5C42;&#x7684;&#x4E24;&#x4E2A;&#x6545;&#x969C;&#x57DF;&#x3002;&#x6BCF;&#x4E2A;zones&#x5FC5;&#x987B;&#x5305;&#x542B;&#x67D0;&#x4E9B;&#x5206;&#x533A;&#x7684;&#x591A;&#x4E8E;1&#x4E2A;&#x526F;&#x672C;&#x3002;We represent this improper fraction of a replica&#x2019;s worth of partitions in decimal form as <code>1.5</code> (<code>3.0 / 2</code>). &#x8FD9;&#x5C31;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#xFF0C;&#x4E0D;&#x4EC5;&#x603B;&#x5206;&#x533A;&#x6570;&#x91CF;&#xFF08;<code>1.5 * 2 ** <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>part-power</span><span class="token punctuation">&gt;</span></span></code>&#xFF09;&#xFF0C;&#x800C;&#x4E14; <em>each</em> &#x5206;&#x533A;&#x5728;&#x8BE5;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#xFF08;&#x5176;&#x5B9E;<code>0.5</code> of the partitions&#x5C06;&#x6709;2&#x4E2A;&#x526F;&#x672C;&#xFF09;&#x3002;Within each zone the two servers will hold <code>0.75</code> of a replica&#x2019;s worth of partitions - this is equal both to &#x201C;the fraction of a replica&#x2019;s worth of partitions assigned to each zone (<code>1.5</code>) divided evenly among the number of failure domains in its sub-tier (2 servers in each zone, i.e. <code>1.5 / 2</code>)&#x201D; but <em>also</em> &#x201C;the total number of replicas (<code>3.0</code>) divided evenly among the total number of failure domains in the server tier (2 servers &#xD7; 2 zones = 4, i.e. <code>3.0 / 4</code>)&#x201D;.&#x8003;&#x8651;&#x5230;&#x6B64;&#x73AF;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4EC5;0.75&#x5305;&#x542B;<code>0.75</code>&#x526F;&#x672C;&#x7684;&#x5206;&#x533A;&#xFF0C;&#x8FD9;&#x6709;&#x52A9;&#x4E8E;&#x544A;&#x77E5;&#x4EFB;&#x4F55;&#x670D;&#x52A1;&#x5668;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x5206;&#x914D;&#x7ED9;&#x5B9A;&#x5206;&#x533A;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x3002;&#x4E3A;&#x4E86;&#x7B80;&#x6D01;&#x8D77;&#x89C1;&#xFF0C;&#x4E00;&#x4E9B;&#x53D8;&#x91CF;&#x540D;&#x79F0;&#x901A;&#x5E38;&#x5C06;&#x8868;&#x793A;replica&#x7684;&#x5341;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x7684;&#x5206;&#x533A;&#x503C;&#x7684;&#x6982;&#x5FF5;&#x79F0;&#x4E3A; <em>replicanths</em> - &#x8FD9;&#x610F;&#x5473;&#x7740;invoke connotations&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x5E94;&#x7528;&#x4E8E;&#x5206;&#x6570;&#x7684;&#x6709;&#x5E8F;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x526F;&#x672C;&#x4E00;&#x822C;&#x5316;&#x4E3A;1&#xFF0C;&#x800C;&#x4E0D;&#x662F; a four<em>th</em> or a fif<em>th</em>&#x3002;The &#x201C;n&#x201D; was probably thrown in because of Blade Runner.</p>
+<p>&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x8BB2;&#x771F;&#x7684;&#xFF0C;&#x4E0A;&#x9762;&#x8FD9;&#x4E00;&#x6BB5;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x5728;&#x8BB2;&#x5565;&#xFF09;</p>
+<h2 id="building-the-ring&#xB6;">Building the Ring<a href="#building-the-ring" title="Permalink to this headline">&#xB6;</a></h2>
+<p>First the ring builder calculates the replicanths wanted at each tier in the ring&#x2019;s topology based on weight.</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x6839;&#x636E;&#x6743;&#x91CD;&#x8BA1;&#x7B97;&#x73AF;&#x7684;&#x62D3;&#x6251;&#x4E2D;&#x6BCF;&#x5C42;&#x6240;&#x9700;&#x7684;replicanths&#x3002;(&#x8BD1;&#x6CE8;&#xFF1A;&#x4E5F;&#x5C31;&#x662F;&#x8BA1;&#x7B97;&#x6BCF;&#x5C42;&#x5E94;&#x8BE5;&#x6709;&#x7684; replica&#x7684;&#x7406;&#x8BBA;&#x503C;)</p>
+<p>Then the ring builder calculates the replicanths wanted at each tier in the ring&#x2019;s topology based on dispersion.</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x6839;&#x636E;dispersion&#x8BA1;&#x7B97;&#x73AF;&#x62D3;&#x6251;&#x4E2D;&#x6BCF;&#x5C42;&#x6240;&#x9700;&#x7684;replicanths&#x3002;</p>
+<p>Then the ring builder calculates the maximum deviation on a single device between its weighted replicanths and wanted replicanths.</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x8BA1;&#x7B97;&#x5355;&#x4E2A;&#x8BBE;&#x5907;&#x5728;&#x5176;weighted replicanth&#x548C;wanted replicanth&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x5927;&#x504F;&#x5DEE;&#x3002;</p>
+<p>Next we interpolate between the two replicanth values (weighted &amp; wanted) at each tier using the specified overload (up to the maximum required overload). It&#x2019;s a linear interpolation, similar to solving for a point on a line between two points - we calculate the slope across the max required overload and then calculate the intersection of the line with the desired overload. This becomes the target.</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;overload&#xFF08;up to the maximum required overload&#xFF09;&#x5728;&#x6BCF;&#x5C42;&#x7684;&#x4E24;&#x4E2A;replicanth&#x503C;&#xFF08;weighted &amp; wanted&#xFF09;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x63D2;&#x503C;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7EBF;&#x6027;&#x63D2;&#x503C;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x6C42;&#x89E3;&#x4E24;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x76F4;&#x7EBF;&#x4E0A;&#x7684;&#x70B9; - &#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x6700;&#x5927;&#x6240;&#x9700;&#x8FC7;&#x8F7D;&#x7684;&#x659C;&#x7387;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x8BE5;&#x7EBF;&#x4E0E;&#x6240;&#x9700;&#x8FC7;&#x8F7D;&#x7684;&#x4EA4;&#x70B9;&#x3002;This becomes the target.</p>
+<p>From the target we calculate the minimum and maximum number of replicas any partition may have in a tier. This becomes the replica-plan.</p>
+<p>&#x4ECE;&#x76EE;&#x6807;&#xFF0C;&#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x4EFB;&#x4F55;&#x5206;&#x533A;&#x5728;&#x5C42;&#x4E2D;&#x53EF;&#x80FD;&#x5177;&#x6709;&#x7684;&#x6700;&#x5C0F;&#x548C;&#x6700;&#x5927;&#x526F;&#x672C;&#x6570;&#x3002;&#x8FD9;&#x6210;&#x4E3A;&#x526F;&#x672C;&#x8BA1;&#x5212;&#xFF08;replica-plan&#xFF09;&#x3002;</p>
+<p>Finally, we calculate the number of partitions that should ideally be assigned to each device based the replica-plan.</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x526F;&#x672C;&#x8BA1;&#x5212;&#x8BA1;&#x7B97;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#x5E94;&#x5206;&#x914D;&#x7ED9;&#x6BCF;&#x4E2A;&#x8BBE;&#x5907;&#x7684;&#x5206;&#x533A;&#x6570;&#x3002;</p>
+<p>On initial balance (i.e., the first time partitions are placed to generate a ring) we must assign each replica of each partition to the device that desires the most partitions excluding any devices that already have their maximum number of replicas of that partition assigned to some parent tier of that device&#x2019;s failure domain.</p>
+<p>&#x5728;&#x521D;&#x59CB;&#x5E73;&#x8861;initial balance&#xFF08;&#x5373;&#xFF0C;&#x7B2C;&#x4E00;&#x6B21;&#x653E;&#x7F6E;&#x5206;&#x533A;&#x4EE5;&#x751F;&#x6210;&#x73AF;&#xFF09;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5C06;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x6BCF;&#x4E2A;&#x526F;&#x672C;&#x5206;&#x914D;&#x7ED9;&#x9700;&#x8981;&#x6700;&#x591A;&#x5206;&#x533A;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x5DF2;&#x5206;&#x914D;&#x7ED9;&#x67D0;&#x4E9B;&#x5206;&#x533A;&#x7684;&#x6700;&#x5927;&#x5206;&#x533A;&#x526F;&#x672C;&#x6570;&#x7684;&#x6545;&#x969C;&#x57DF;&#x7684;&#x7236;&#x5C42;&#x7684;&#x8BBE;&#x5907;&#x3002;</p>
+<p>When building a new ring based on an old ring, the desired number of partitions each device wants is recalculated from the current replica-plan. Next the partitions to be reassigned are gathered up. Any removed devices have all their assigned partitions unassigned and added to the gathered list. Any partition replicas that (due to the addition of new devices) can be spread out for better durability are unassigned and added to the gathered list. Any devices that have more partitions than they now desire have random partitions unassigned from them and added to the gathered list. Lastly, the gathered partitions are then reassigned to devices using a similar method as in the initial assignment described above.</p>
+<p>&#x5728;&#x57FA;&#x4E8E;&#x65E7;&#x73AF;&#x5EFA;&#x7ACB;&#x65B0;&#x73AF;&#x65F6;&#xFF0C;&#x4ECE;&#x5F53;&#x524D;&#x526F;&#x672C;&#x8BA1;&#x5212;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x8BBE;&#x5907;&#x6240;&#x9700;&#x7684;&#x6240;&#x9700;&#x5206;&#x533A;&#x6570;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x5C06;&#x6536;&#x96C6;&#x8981;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x7684;&#x5206;&#x533A;&#x3002;&#x4EFB;&#x4F55;&#x5DF2;&#x5220;&#x9664;&#x7684;&#x8BBE;&#x5907;&#x90FD;&#x4F1A;&#x5C06;&#x6240;&#x6709;&#x5DF2;&#x5206;&#x914D;&#x7684;&#x5206;&#x533A;&#x53D6;&#x6D88;&#x5206;&#x914D;&#x5E76;&#x6DFB;&#x52A0;&#x5230;gathered list&#x4E2D;&#x3002;&#x4EFB;&#x4F55;&#x5206;&#x533A;&#x526F;&#x672C;&#xFF08;&#x7531;&#x4E8E;&#x6DFB;&#x52A0;&#x4E86;&#x65B0;&#x8BBE;&#x5907;&#xFF09;&#x53EF;&#x4EE5;&#x5206;&#x6563;&#x4EE5;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x6301;&#x4E45;&#x6027;&#xFF0C;&#x8FD9;&#x4E9B;&#x526F;&#x672C;&#x662F;&#x672A;&#x5206;&#x914D;&#x7684;&#x5E76;&#x6DFB;&#x52A0;&#x5230;&#x6536;&#x96C6;&#x5217;&#x8868;&#x4E2D;&#x3002;&#x4EFB;&#x4F55;&#x5177;&#x6709;&#x6BD4;&#x73B0;&#x5728;&#x66F4;&#x591A;&#x5206;&#x533A;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x90FD;&#x4F1A;&#x4ECE;&#x5B83;&#x4EEC;&#x4E2D;&#x53D6;&#x6D88;&#x5206;&#x914D;&#x968F;&#x673A;&#x5206;&#x533A;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x5230;&#x6536;&#x96C6;&#x5217;&#x8868;&#x4E2D;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x4E0E;&#x4E0A;&#x8FF0;&#x521D;&#x59CB;&#x5206;&#x914D;&#x4E2D;&#x7C7B;&#x4F3C;&#x7684;&#x65B9;&#x6CD5;&#x5C06;&#x6536;&#x96C6;&#x7684;&#x5206;&#x533A;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x7ED9;&#x8BBE;&#x5907;&#x3002;</p>
+<p>&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x7B80;&#x5355;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x5404;&#x79CD;&#x4FE1;&#x606F;&#xFF0C;&#x6536;&#x96C6;&#x8BBE;&#x5907;&#xFF0C;&#x7528;&#x4E8E;&#x7B49;&#x4F1A;rebalance&#x7684;&#x65F6;&#x5019;&#x5206;&#x914D;parition&#xFF09;</p>
+<p>Whenever a partition has a replica reassigned, the time of the reassignment is recorded. This is taken into account when gathering partitions to reassign so that no partition is moved twice in a configurable amount of time. This configurable amount of time is known internally to the RingBuilder class as <code>min_part_hours</code>. This restriction is ignored for replicas of partitions on devices that have been removed, as device removal should only happens on device failure and there&#x2019;s no choice but to make a reassignment.</p>
+<p>&#x6BCF;&#x5F53;&#x5206;&#x533A;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x526F;&#x672C;&#x65F6;&#xFF0C;&#x90FD;&#x4F1A;&#x8BB0;&#x5F55;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x5728;&#x6536;&#x96C6;&#x5206;&#x533A;&#x4EE5;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x65F6;&#x4F1A;&#x8003;&#x8651;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x53EF;&#x914D;&#x7F6E;&#x7684;&#x65F6;&#x95F4;&#x5185;&#x4E0D;&#x4F1A;&#x79FB;&#x52A8;&#x5206;&#x533A;&#x4E24;&#x6B21;&#x3002;&#x8FD9;&#x4E2A;&#x53EF;&#x914D;&#x7F6E;&#x7684;&#x65F6;&#x95F4;&#x91CF;&#x5728;RingBuilder&#x7C7B;&#x5185;&#x90E8;&#x662F; <code>min_part_hours</code>&#x3002;&#x5BF9;&#x4E8E;&#x5DF2;&#x5220;&#x9664;&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x5206;&#x533A;&#x526F;&#x672C;&#xFF0C;&#x5C06;&#x5FFD;&#x7565;&#x6B64;&#x9650;&#x5236;&#xFF0C;&#x56E0;&#x4E3A;&#x8BBE;&#x5907;&#x5220;&#x9664;&#x5E94;&#x4EC5;&#x5728;&#x8BBE;&#x5907;&#x6545;&#x969C;&#x65F6;&#x53D1;&#x751F;&#xFF0C;&#x5E76;&#x4E14;&#x9664;&#x4E86;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x4E4B;&#x5916;&#xFF0C;&#x522B;&#x65E0;&#x9009;&#x62E9;&#x3002;</p>
+<p>The above processes don&#x2019;t always perfectly rebalance a ring due to the random nature of gathering partitions for reassignment. To help reach a more balanced ring, the rebalance process is repeated a fixed number of times until the replica-plan is fulfilled or unable to be fulfilled (indicating we probably can&#x2019;t get perfect balance due to too many partitions recently moved).</p>
+<p>&#x7531;&#x4E8E;&#x6536;&#x96C6;&#x5206;&#x533A;&#x7528;&#x4E8E;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x7684;&#x968F;&#x673A;&#x6027;&#x8D28;&#xFF0C;&#x4E0A;&#x8FF0;&#x8FC7;&#x7A0B;&#x5E76;&#x4E0D;&#x603B;&#x662F;perfectly rebalance a ring&#x3002;&#x4E3A;&#x4E86;&#x5E2E;&#x52A9;&#x8FBE;&#x5230;&#x66F4;&#x5E73;&#x8861;&#x7684;&#x73AF;&#xFF0C;rebalance&#x8FC7;&#x7A0B;&#x91CD;&#x590D;&#x56FA;&#x5B9A;&#x6B21;&#x6570;&#xFF0C;&#x76F4;&#x5230;replica-plan&#x5B9E;&#x73B0;&#x6216;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#xFF08;&#x8868;&#x660E;&#x7531;&#x4E8E;&#x6700;&#x8FD1;&#x79FB;&#x52A8;&#x7684;&#x5206;&#x533A;&#x592A;&#x591A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;get perfect balance&#xFF09;&#x3002;</p>
+<h2 id="composite-rings&#xB6;">Composite Rings<a href="#module-swift.common.ring.composite_builder" title="Permalink to this headline">&#xB6;</a></h2>
+<p>A standard ring built using the <a href="#ring-builder">ring-builder</a> will attempt to randomly disperse replicas or erasure-coded fragments across failure domains, but does not provide any guarantees such as placing at least one replica of every partition into each region. Composite rings are intended to provide operators with greater control over the dispersion of object replicas or fragments across a cluster, in particular when there is a desire to have strict guarantees that some replicas or fragments are placed in certain failure domains. This is particularly important for policies with duplicated erasure-coded fragments.</p>
+<p>&#x4F7F;&#x7528;<a href="#ring-builder">ring-builder</a>&#x6784;&#x5EFA;&#x7684;&#x6807;&#x51C6;&#x73AF;&#x5C06;&#x5C1D;&#x8BD5;&#x8DE8;&#x8D8A;&#x6545;&#x969C;&#x57DF;&#x968F;&#x673A;&#x5206;&#x6563;&#x526F;&#x672C;&#x6216;&#x64E6;&#x9664;&#x7F16;&#x7801;&#x7684;&#x7247;&#x6BB5;&#xFF0C;&#x4F46;&#x4E0D;&#x63D0;&#x4F9B;&#x4EFB;&#x4F55;&#x4FDD;&#x8BC1;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x526F;&#x672C;&#x653E;&#x7F6E;&#x5230;&#x6BCF;&#x4E2A;region&#x4E2D;&#x3002;&#x590D;&#x5408;&#x73AF;&#xFF08;Composite rings&#xFF09;&#x65E8;&#x5728;&#x4E3A;&#x64CD;&#x4F5C;&#x5458;&#x63D0;&#x4F9B;&#x5BF9;&#x8DE8;&#x7FA4;&#x96C6;&#x7684;&#x5BF9;&#x8C61;replicas&#x6216;fragments&#x7684;&#x5206;&#x6563;&#x7684;&#x66F4;&#x5927;&#x63A7;&#x5236;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5F53;&#x5E0C;&#x671B;&#x4E25;&#x683C;&#x4FDD;&#x8BC1;&#x67D0;&#x4E9B;&#x590D;&#x5236;&#x54C1;&#x6216;&#x7247;&#x6BB5;&#x653E;&#x7F6E;&#x5728;&#x67D0;&#x4E9B;&#x6545;&#x969C;&#x57DF;&#x4E2D;&#x65F6;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x5177;&#x6709;&#x91CD;&#x590D;&#x7684;&#x64E6;&#x9664;&#x7F16;&#x7801;&#x7247;&#x6BB5;&#x7684;&#x7B56;&#x7565;&#x5C24;&#x5176;&#x91CD;&#x8981;&#x3002;</p>
+<p>A composite ring comprises two or more component rings that are combined to form a single ring with a replica count equal to the sum of replica counts from the component rings. The component rings are built independently, using distinct devices in distinct regions, which means that the dispersion of replicas between the components can be guaranteed. The <code>composite_builder</code> utilities may then be used to combine components into a composite ring.</p>
+<p>&#x590D;&#x5408;&#x73AF;&#x5305;&#x62EC;&#x4E24;&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x4E2A;&#x7EC4;&#x4EF6;&#x73AF;&#xFF0C;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x73AF;&#x88AB;&#x7EC4;&#x5408;&#x4EE5;&#x5F62;&#x6210;&#x5355;&#x4E2A;&#x73AF;&#xFF0C;&#x5176;&#x590D;&#x5236;&#x8BA1;&#x6570;&#x7B49;&#x4E8E;&#x6765;&#x81EA;&#x7EC4;&#x4EF6;&#x73AF;&#x7684;&#x590D;&#x5236;&#x8BA1;&#x6570;&#x7684;&#x603B;&#x548C;&#x3002;&#x7EC4;&#x4EF6;&#x73AF;&#x662F;&#x72EC;&#x7ACB;&#x6784;&#x5EFA;&#x7684;&#xFF0C;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#x4E2D;&#x7684;&#x4E0D;&#x540C;&#x8BBE;&#x5907;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x590D;&#x5236;&#x54C1;&#x7684;&#x5206;&#x6563;&#x3002;composite_builder &#x7136;&#x540E;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;&#x5C06;&#x7EC4;&#x4EF6;&#x7EC4;&#x5408;&#x6210;&#x590D;&#x5408;&#x73AF;&#x3002;</p>
+<p>For example, consider a normal ring <code>ring0</code> with replica count of 4 and devices in two regions <code>r1</code> and <code>r2</code>. Despite the best efforts of the ring-builder, it is possible for there to be three replicas of a particular partition placed in one region and only one replica placed in the other region. For example:</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x7684;&#x73AF;ring0&#x4E3A;4&#x526F;&#x672C;&#x8BA1;&#x6570;&#x548C;&#x5728;&#x4E24;&#x4E2A;&#x533A;&#x57DF;&#x7684;&#x8BBE;&#x5907;r1&#x548C;r2&#x3002;&#x5C3D;&#x7BA1;&#x73AF;&#x6784;&#x5EFA;&#x5668;&#x505A;&#x4E86;&#x6700;&#x5927;&#x52AA;&#x529B;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x5728;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#x4E2D;&#x653E;&#x7F6E;&#x4E09;&#x4E2A;&#x7279;&#x5B9A;&#x5206;&#x533A;&#x7684;&#x590D;&#x5236;&#x54C1;&#xFF0C;&#x800C;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#x4E2D;&#x53EA;&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x590D;&#x5236;&#x54C1;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<p>part_n -&gt; r1z1h110/sdb r1z2h12/sdb r1z3h13/sdb r2z1h21/sdb</p>
+<p>Now consider two normal rings each with replica count of 2: <code>ring1</code> has devices in only <code>r1</code>; <code>ring2</code> has devices in only <code>r2</code>. When these rings are combined into a composite ring then every partition is guaranteed to be mapped to two devices in each of <code>r1</code> and <code>r2</code>, for example:</p>
+<p>part_n -&gt; r1z1h10/sdb r1z2h20/sdb  r2z1h21/sdb r2z2h22/sdb
+          |_____________________|  |_____________________|
+                     |                        |
+                   ring1                    ring2</p>
+<p>The dispersion of partition replicas across failure domains within each of the two component rings may change as they are modified and rebalanced, but the dispersion of replicas between the two regions is guaranteed by the use of a composite ring.</p>
+<p>For rings to be formed into a composite they must satisfy the following requirements:</p>
+<ul>
+<li>All component rings must have the same part power (and therefore number of partitions)</li>
+<li>All component rings must have an integer replica count</li>
+<li>Each region may only be used in one component ring</li>
+<li>Each device may only be used in one component ring</li>
+</ul>
+<p>Under the hood, the composite ring has a <code>_replica2part2dev_id</code> table that is the union of the tables from the component rings. Whenever the component rings are rebalanced, the composite ring must be rebuilt. There is no dynamic rebuilding of the composite ring.</p>
+<p>Note</p>
+<p>The order in which component rings are combined into a composite ring is very significant because it determines the order in which the Ring.get_part_nodes() method will provide primary nodes for the composite ring and consequently the node indexes assigned to the primary nodes. For an erasure-coded policy, inadvertent changes to the primary node indexes could result in large amounts of data movement due to fragments being moved to their new correct primary.</p>
+<p>The <code>id</code> of each component RingBuilder is therefore stored in metadata of the composite and used to check for the component ordering when the same composite ring is re-composed. RingBuilder <code>id</code>s are normally assigned when a RingBuilder instance is first saved. Older RingBuilder instances loaded from file may not have an <code>id</code> assigned and will need to be saved before they can be used as components of a composite ring. This can be achieved by, for example:</p>
+<p>swift-ring-builder <builder\-file\> rebalance --force</builder\-file\></p>
+<h2 id="ring-builder-analyzer&#xB6;">Ring Builder Analyzer<a href="#module-swift.cli.ring_builder_analyzer" title="Permalink to this headline">&#xB6;</a></h2>
+<p>This is a tool for analyzing how well the ring builder performs its job in a particular scenario. It is intended to help developers quantify any improvements or regressions in the ring builder; it is probably not useful to others.</p>
+<p>The ring builder analyzer takes a scenario file containing some initial parameters for a ring builder plus a certain number of rounds. In each round, some modifications are made to the builder, e.g. add a device, remove a device, change a device&#x2019;s weight. Then, the builder is repeatedly rebalanced until it settles down. Data about that round is printed, and the next round begins.</p>
+<p>Scenarios are specified in JSON. Example scenario for a gradual device addition:</p>
+<p>{
+    &quot;part_power&quot;: 12,
+    &quot;replicas&quot;: 3,
+    &quot;overload&quot;: 0.1,
+    &quot;random_seed&quot;: 203488,</p>
+<pre class="language-"><code>&quot;rounds&quot;: \[
+    \[
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.40:6200/sda&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.40:6200/sdb&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.40:6200/sdc&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.40:6200/sdd&quot;, 8000\],
+
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.41:6200/sda&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.41:6200/sdb&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.41:6200/sdc&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.41:6200/sdd&quot;, 8000\],
+
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.43:6200/sda&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.43:6200/sdb&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.43:6200/sdc&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.43:6200/sdd&quot;, 8000\],
+
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.44:6200/sda&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.44:6200/sdb&quot;, 8000\],
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.44:6200/sdc&quot;, 8000\]
+    \], \[
+        \[&quot;add&quot;, &quot;r1z2-10.20.30.44:6200/sdd&quot;, 1000\]
+    \], \[
+        \[&quot;set\_weight&quot;, 15, 2000\]
+    \], \[
+        \[&quot;remove&quot;, 3\],
+        \[&quot;set\_weight&quot;, 15, 3000\]
+    \], \[
+        \[&quot;set\_weight&quot;, 15, 4000\]
+    \], \[
+        \[&quot;set\_weight&quot;, 15, 5000\]
+    \], \[
+        \[&quot;set\_weight&quot;, 15, 6000\]
+    \], \[
+        \[&quot;set\_weight&quot;, 15, 7000\]
+    \], \[
+        \[&quot;set\_weight&quot;, 15, 8000\]
+    \]\]
+</code></pre><p>}</p>
+<h2 id="history&#xB6;">History<a href="#history" title="Permalink to this headline">&#xB6;</a></h2>
+<p>The ring code went through many iterations before arriving at what it is now and while it has largely been stable, the algorithm has seen a few tweaks or perhaps even fundamentally changed as new ideas emerge. This section will try to describe the previous ideas attempted and attempt to explain why they were discarded.</p>
+<p>A &#x201C;live ring&#x201D; option was considered where each server could maintain its own copy of the ring and the servers would use a gossip protocol to communicate the changes they made. This was discarded as too complex and error prone to code correctly in the project timespan available. One bug could easily gossip bad data out to the entire cluster and be difficult to recover from. Having an externally managed ring simplifies the process, allows full validation of data before it&#x2019;s shipped out to the servers, and guarantees each server is using a ring from the same timeline. It also means that the servers themselves aren&#x2019;t spending a lot of resources maintaining rings.</p>
+<p>A couple of &#x201C;ring server&#x201D; options were considered. One was where all ring lookups would be done by calling a service on a separate server or set of servers, but this was discarded due to the latency involved. Another was much like the current process but where servers could submit change requests to the ring server to have a new ring built and shipped back out to the servers. This was discarded due to project time constraints and because ring changes are currently infrequent enough that manual control was sufficient. However, lack of quick automatic ring changes did mean that other components of the system had to be coded to handle devices being unavailable for a period of hours until someone could manually update the ring.</p>
+<p>The current ring process has each replica of a partition independently assigned to a device. A version of the ring that used a third of the memory was tried, where the first replica of a partition was directly assigned and the other two were determined by &#x201C;walking&#x201D; the ring until finding additional devices in other zones. This was discarded due to the loss of control over how many replicas for a given partition moved at once. Keeping each replica independent allows for moving only one partition replica within a given time window (except due to device failures). Using the additional memory was deemed a good trade-off for moving data around the cluster much less often.</p>
+<p>Another ring design was tried where the partition to device assignments weren&#x2019;t stored in a big list in memory but instead each device was assigned a set of hashes, or anchors. The partition would be determined from the data item&#x2019;s hash and the nearest device anchors would determine where the replicas should be stored. However, to get reasonable distribution of data each device had to have a lot of anchors and walking through those anchors to find replicas started to add up. In the end, the memory savings wasn&#x2019;t that great and more processing power was used, so the idea was discarded.</p>
+<p>A completely non-partitioned ring was also tried but discarded as the partitioning helps many other components of the system, especially replication. Replication can be attempted and retried in a partition batch with the other replicas rather than each data item independently attempted and retried. Hashes of directory structures can be calculated and compared with other replicas to reduce directory walking and network traffic.</p>
+<p>Partitioning and independently assigning partition replicas also allowed for the best-balanced cluster. The best of the other strategies tended to give &#xB1;10% variance on device balance with devices of equal weight and &#xB1;15% with devices of varying weights. The current strategy allows us to get &#xB1;3% and &#xB1;8% respectively.</p>
+<p>Various hashing algorithms were tried. SHA offers better security, but the ring doesn&#x2019;t need to be cryptographically secure and SHA is slower. Murmur was much faster, but MD5 was built-in and hash computation is a small percentage of the overall request handling time. In all, once it was decided the servers wouldn&#x2019;t be maintaining the rings themselves anyway and only doing hash lookups, MD5 was chosen for its general availability, good distribution, and adequate speed.</p>
+<p>The placement algorithm has seen a number of behavioral changes for unbalanceable rings. The ring builder wants to keep replicas as far apart as possible while still respecting device weights. In most cases, the ring builder can achieve both, but sometimes they conflict. At first, the behavior was to keep the replicas far apart and ignore device weight, but that made it impossible to gradually go from one region to two, or from two to three. Then it was changed to favor device weight over dispersion, but that wasn&#x2019;t so good for rings that were close to balanceable, like 3 machines with 60TB, 60TB, and 57TB of disk space; operators were expecting one replica per machine, but didn&#x2019;t always get it. After that, overload was added to the ring builder so that operators could choose a balance between dispersion and device weights. In time the overload concept was improved and made more accurate.</p>
+<p>For more background on consistent hashing rings, please see <a href="ring_background.html">Building a Consistent Hashing Ring</a>.</p>
+<p>updated: 2019-01-15 02:30</p>
+<p> <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><a href="_static/images/docs/license.png" data-lightbox="3f43be0d-6538-4c81-85e7-acfaba979619" data-title="Creative Commons Attribution 3.0 License"><img src="_static/images/docs/license.png" alt="Creative Commons Attribution 3.0 License"></a></a> </p>
+<p>Except where otherwise noted, this document is licensed under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a>. See all <a href="http://www.openstack.org/legal" target="_blank">OpenStack Legal Documents</a>.</p>
+<p><a href="#">found an error? report a bug</a> <a href="http://ask.openstack.org" target="_blank">questions?</a></p>
+<p>OpenStack Documentation</p>
+<ul>
+<li>Guides</li>
+<li><a href="http://docs.openstack.org/index.html#install-guides" target="_blank">Install Guides</a></li>
+<li><a href="http://docs.openstack.org/index.html#user-guides" target="_blank">User Guides</a></li>
+<li><a href="http://docs.openstack.org/index.html#configuration-guides" target="_blank">Configuration Guides</a></li>
+<li><a href="http://docs.openstack.org/index.html#ops-and-admin-guides" target="_blank">Operations and Administration Guides</a></li>
+<li><a href="http://docs.openstack.org/index.html#api-guides" target="_blank">API Guides</a></li>
+<li><a href="http://docs.openstack.org/index.html#contributor-guides" target="_blank">Contributor Guides</a></li>
+<li>Languages</li>
+<li><a href="http://docs.openstack.org/de/" target="_blank">Deutsch (German)</a></li>
+<li><a href="http://docs.openstack.org/fr/" target="_blank">Fran&#xE7;ais (French)</a></li>
+<li><a href="http://docs.openstack.org/id/" target="_blank">Bahasa Indonesia (Indonesian)</a></li>
+<li><a href="http://docs.openstack.org/it/" target="_blank">Italiano (Italian)</a></li>
+<li><a href="http://docs.openstack.org/ja/" target="_blank">&#x65E5;&#x672C;&#x8A9E; (Japanese)</a></li>
+<li><a href="http://docs.openstack.org/ko_KR/" target="_blank">&#xD55C;&#xAD6D;&#xC5B4; (Korean)</a></li>
+<li><a href="http://docs.openstack.org/pt_BR/" target="_blank">Portugu&#xEA;s (Portuguese)</a></li>
+<li><a href="http://docs.openstack.org/tr_TR/" target="_blank">T&#xFC;rk&#xE7;e (T&#xFC;rkiye)</a></li>
+<li><a href="http://docs.openstack.org/zh_CN/" target="_blank">&#x7B80;&#x4F53;&#x4E2D;&#x6587; (Simplified Chinese)</a></li>
+</ul>
+<p>[</p>
+<h4 id="swift-2171dev19">swift 2.17.1.dev19</h4>
+<p>](index.html)</p>
+<ul>
+<li><p><a href="getting_started.html">Getting Started</a></p>
+</li>
+<li><p><a href="api/object_api_v1_overview.html">Object Storage API overview</a></p>
+</li>
+<li><a href="overview_architecture.html">Swift Architectural Overview</a></li>
+<li><a href="#">The Rings</a><ul>
+<li><a href="#ring-builder">Ring Builder</a></li>
+<li><a href="#ring-data-structure">Ring Data Structure</a></li>
+<li><a href="#partition-replica-terminology">Partition &amp; Replica Terminology</a></li>
+<li><a href="#building-the-ring">Building the Ring</a></li>
+<li><a href="#module-swift.common.ring.composite_builder">Composite Rings</a></li>
+<li><a href="#module-swift.cli.ring_builder_analyzer">Ring Builder Analyzer</a></li>
+<li><a href="#history">History</a></li>
+</ul>
+</li>
+<li><a href="overview_policies.html">Storage Policies</a></li>
+<li><a href="overview_reaper.html">The Account Reaper</a></li>
+<li><a href="overview_auth.html">The Auth System</a></li>
+<li><a href="overview_acl.html">Access Control Lists (ACLs)</a></li>
+<li><a href="overview_replication.html">Replication</a></li>
+<li><a href="ratelimit.html">Rate Limiting</a></li>
+<li><a href="overview_large_objects.html">Large Object Support</a></li>
+<li><a href="overview_object_versioning.html">Object Versioning</a></li>
+<li><a href="overview_global_cluster.html">Global Clusters</a></li>
+<li><a href="overview_container_sync.html">Container to Container Synchronization</a></li>
+<li><a href="overview_expiring_objects.html">Expiring Object Support</a></li>
+<li><a href="cors.html">CORS</a></li>
+<li><a href="crossdomain.html">Cross-domain Policy File</a></li>
+<li><a href="overview_erasure_code.html">Erasure Code Support</a></li>
+<li><a href="overview_encryption.html">Object Encryption</a></li>
+<li><a href="overview_backing_store.html">Using Swift as Backing Store for Service Data</a></li>
+<li><a href="ring_background.html">Building a Consistent Hashing Ring</a></li>
+<li><a href="ring_partpower.html">Modifying Ring Partition Power</a></li>
+<li><p><a href="associated_projects.html">Associated Projects</a></p>
+</li>
+<li><p><a href="development_guidelines.html">Development Guidelines</a></p>
+</li>
+<li><a href="development_saio.html">SAIO - Swift All In One</a></li>
+<li><a href="first_contribution_swift.html">First Contribution to Swift</a></li>
+<li><a href="policies_saio.html">Adding Storage Policies to an Existing SAIO</a></li>
+<li><a href="development_auth.html">Auth Server and Middleware</a></li>
+<li><a href="development_middleware.html">Middleware and Metadata</a></li>
+<li><p><a href="development_ondisk_backends.html">Pluggable On-Disk Back-end APIs</a></p>
+</li>
+<li><p><a href="howto_installmultinode.html">Instructions for a Multiple Server Swift Installation</a></p>
+</li>
+<li><a href="deployment_guide.html">Deployment Guide</a></li>
+<li><a href="apache_deployment_guide.html">Apache Deployment Guide</a></li>
+<li><a href="admin_guide.html">Administrator&#x2019;s Guide</a></li>
+<li><a href="replication_network.html">Dedicated replication network</a></li>
+<li><a href="logs.html">Logs</a></li>
+<li><a href="ops_runbook/index.html">Swift Ops Runbook</a></li>
+<li><a href="admin/index.html">OpenStack Swift Administrator Guide</a></li>
+<li><p><a href="install/index.html">Object Storage Install Guide</a></p>
+</li>
+<li><p><a href="api/object_api_v1_overview.html">Object Storage API overview</a></p>
+</li>
+<li><a href="api/discoverability.html">Discoverability</a></li>
+<li><a href="api/authentication.html">Authentication</a></li>
+<li><a href="api/container_quotas.html">Container quotas</a></li>
+<li><a href="api/object_versioning.html">Object versioning</a></li>
+<li><a href="api/large_objects.html">Large objects</a></li>
+<li><a href="api/temporary_url_middleware.html">Temporary URL middleware</a></li>
+<li><a href="api/form_post_middleware.html">Form POST middleware</a></li>
+<li><a href="api/use_content-encoding_metadata.html">Use Content-Encoding metadata</a></li>
+<li><p><a href="api/use_the_content-disposition_metadata.html">Use the Content-Disposition metadata</a></p>
+</li>
+<li><p><a href="ring.html">Partitioned Consistent Hash Ring</a></p>
+</li>
+<li><a href="proxy.html">Proxy</a></li>
+<li><a href="account.html">Account</a></li>
+<li><a href="container.html">Container</a></li>
+<li><a href="db.html">Account DB and Container DB</a></li>
+<li><a href="object.html">Object</a></li>
+<li><a href="misc.html">Misc</a></li>
+<li><a href="middleware.html">Middleware</a></li>
+</ul>
+<h4 id="page-contents">Page Contents</h4>
+<ul>
+<li><a href="#">The Rings</a><ul>
+<li><a href="#ring-builder">Ring Builder</a></li>
+<li><a href="#ring-data-structure">Ring Data Structure</a><ul>
+<li><a href="#list-of-devices">List of Devices</a></li>
+<li><a href="#partition-assignment-list">Partition Assignment List</a></li>
+<li><a href="#partition-shift-value">Partition Shift Value</a></li>
+<li><a href="#fractional-replicas">Fractional Replicas</a></li>
+<li><a href="#dispersion">Dispersion</a></li>
+<li><a href="#overload">Overload</a></li>
+</ul>
+</li>
+<li><a href="#partition-replica-terminology">Partition &amp; Replica Terminology</a></li>
+<li><a href="#building-the-ring">Building the Ring</a></li>
+<li><a href="#module-swift.common.ring.composite_builder">Composite Rings</a></li>
+<li><a href="#module-swift.cli.ring_builder_analyzer">Ring Builder Analyzer</a></li>
+<li><a href="#history">History</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="openstack">OpenStack</h3>
+<ul>
+<li><a href="http://openstack.org/projects/" target="_blank">Projects</a></li>
+<li><a href="http://openstack.org/projects/openstack-security/" target="_blank">OpenStack Security</a></li>
+<li><a href="http://openstack.org/projects/openstack-faq/" target="_blank">Common Questions</a></li>
+<li><a href="http://openstack.org/blog/" target="_blank">Blog</a></li>
+<li><a href="http://openstack.org/news/" target="_blank">News</a></li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><a href="http://openstack.org/community/" target="_blank">User Groups</a></li>
+<li><a href="http://openstack.org/community/events/" target="_blank">Events</a></li>
+<li><a href="http://openstack.org/community/jobs/" target="_blank">Jobs</a></li>
+<li><a href="http://openstack.org/foundation/companies/" target="_blank">Companies</a></li>
+<li><a href="http://docs.openstack.org/infra/manual/developers.html" target="_blank">Contribute</a></li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><a href="http://docs.openstack.org" target="_blank">OpenStack Manuals</a></li>
+<li><a href="http://openstack.org/software/start/" target="_blank">Getting Started</a></li>
+<li><a href="http://developer.openstack.org" target="_blank">API Documentation</a></li>
+<li><a href="https://wiki.openstack.org" target="_blank">Wiki</a></li>
+</ul>
+<h3 id="branding--legal">Branding &amp; Legal</h3>
+<ul>
+<li><a href="http://openstack.org/brand/" target="_blank">Logos &amp; Guidelines</a></li>
+<li><a href="http://openstack.org/brand/openstack-trademark-policy/" target="_blank">Trademark Policy</a></li>
+<li><a href="http://openstack.org/privacy/" target="_blank">Privacy Policy</a></li>
+<li><a href="https://wiki.openstack.org/wiki/How_To_Contribute#Contributor_License_Agreement" target="_blank">OpenStack CLA</a></li>
+</ul>
+<h3 id="stay-in-touch">Stay In Touch</h3>
+<p><a href="https://twitter.com/OpenStack" target="_blank"></a><a href="https://www.facebook.com/openstack" target="_blank"></a><a href="https://www.linkedin.com/company/openstack" target="_blank"></a><a href="https://www.youtube.com/user/OpenStackFoundation" target="_blank"></a></p>
+<p>The OpenStack project is provided under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 license</a>. Openstack.org is powered by <a href="http://rackspace.com" target="_blank">Rackspace Cloud Computing</a>.</p>
+<p>var DOCUMENTATION_OPTIONS = { URL_ROOT: &apos;./&apos;, VERSION: &apos;2.17.1.dev19&apos;, COLLAPSE_INDEX: false, FILE_SUFFIX: &apos;.html&apos;, SOURCELINK_SUFFIX: &apos;.txt&apos;, HAS_SOURCE: true }; /* build a description of this page including SHA, source location on git repo, build time and the project&apos;s launchpad bug tag. Set the HREF of the bug buttons */ var lineFeed = &quot;%0A&quot;; var gitURL = &quot;Source: Can&apos;t derive source file URL&quot;; /* there have been cases where &quot;pagename&quot; wasn&apos;t set; better check for it */ /* &quot;giturl&quot; is the URL of the source file on Git and is auto-generated by openstackdocstheme. &quot;pagename&quot; is a standard sphinx parameter containing the name of the source file, without extension. */ var sourceFile = &quot;overview_ring&quot; + &quot;.rst&quot;; gitURL = &quot;Source: <a href="https://git.openstack.org/cgit/openstack/swift/tree/doc/source" target="_blank">https://git.openstack.org/cgit/openstack/swift/tree/doc/source</a>&quot; + &quot;/&quot; + sourceFile; /* gitsha, project and bug_tag rely on variables in conf.py */ var gitSha = &quot;SHA: 4ea52f3a950b5db1bb0549de322e252471218401&quot;; var bugProject = &quot;swift&quot;; var bugTitle = &quot;The Rings in swift&quot;; var fieldTags = &quot;&quot;; var useStoryboard = &quot;&quot;; /* &quot;last_updated&quot; is the build date and time. It relies on the conf.py variable &quot;html_last_updated_fmt&quot;, which should include year/month/day as well as hours and minutes */ var buildstring = &quot;Release: 2.17.1.dev19 on 2019-01-15 02:30&quot;; var fieldComment = encodeURI(buildstring) + lineFeed + encodeURI(gitSha) + lineFeed + encodeURI(gitURL) ; logABug(bugTitle, bugProject, fieldComment, fieldTags); $(document).ready(function(){ $.ajax({ context: this, dataType : &quot;html&quot;, url : &quot;<a href="https://docs.openstack.org/queens/badge.html" target="_blank">https://docs.openstack.org/queens/badge.html</a>&quot;, success : function(results) { $(&apos;#deprecated-badge-container&apos;).html(results); } }); }); </p>
+<footer class="page-footer"><span class="copyright"><p><a href="https://github.com/eiuapp/swift-handbook" target="_blank">Openstack Swift&#x5B9E;&#x8DF5;&#x6307;&#x5357;</a> | <a href="https://github.com/eiuapp/swift-handbook" target="_blank">Openstack Swift&#x5B9E;&#x8DF5;&#x6307;&#x5357;</a></p><p><a href="https://res.cloudinary.com/dmtixvmgt/image/upload/v1539022273/wechat-qrcode_cml5dm.jpg" data-lightbox="2fd927ee-fa64-4eca-8ed5-6bd72b573a3c" target="_blank">&#x70B9;&#x51FB;&#x5173;&#x6CE8;&#x3010;servicemesher&#x3011;&#x516C;&#x4F17;&#x53F7;&#x56DE;&#x590D;&#x3010;&#x52A0;&#x7FA4;&#x3011;&#x52A0;&#x5165;&#x5B66;&#x4E60;&#x7FA4;</a> | </p>Copyright &#xA9; <a href="https://eiu.app" target="_blank">eiu.app</a> 2017-2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"> Updated at 
+2019-02-19 14:58:02
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="overview_architecture.html" class="navigation navigation-prev " aria-label="Previous page: Swift Architectural Overview">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="overview_policies.html" class="navigation navigation-next " aria-label="Next page: Storage Policies">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"The Rings","level":"4.3","depth":1,"next":{"title":"Storage Policies","level":"4.4","depth":1,"path":"docs/overview_policies.md","ref":"docs/overview_policies.md","articles":[]},"previous":{"title":"Swift Architectural Overview","level":"4.2","depth":1,"path":"docs/overview_architecture.md","ref":"docs/overview_architecture.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general","lightbox","adsense","ga"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"<p><a href=https://github.com/eiuapp/swift-handbook>Openstack Swift实践指南</a> | <a href=https://github.com/eiuapp/swift-handbook>Openstack Swift实践指南</a></p><p><a href=https://res.cloudinary.com/dmtixvmgt/image/upload/v1539022273/wechat-qrcode_cml5dm.jpg data-lightbox=2fd927ee-fa64-4eca-8ed5-6bd72b573a3c>点击关注【servicemesher】公众号回复【加群】加入学习群</a> | </p>Copyright © <a href=https://eiu.app>eiu.app</a> 2017-2019","modify_label":" Updated at ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"lang":{"shell":"bash"},"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/eiuapp/swift-docs"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/eiuapp/swift-docs/blob/master/"},"splitter":{},"adsense":{"client":"ca-pub-4029167986768912","slot":"2445941692","format":"auto","element":".page-inner section","position":"bottom"},"codesnippet":{},"sitemap-general":{"prefix":"https://eiu.app/swift-docs/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"eiuapp/swift-docs","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"ga":{"configuration":"auto","token":"UA-93485976-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{}},"theme":"default","author":"Donald Tsang（圆月弯刀）","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Swift Docs - Swift 官方文档阅读 by Donald Tsang(圆月弯刀)","language":"zh-hans","links":{"sidebar":{"Donald Tsang":"https://b.qqbb.app","Swift Docs":"https://eiu.app/swift-docs"}},"gitbook":"*","description":"Swift Docs - Swift 官方文档阅读 2019年 by Donald Tsang(圆月弯刀) "},"file":{"path":"docs/overview_rings.md","mtime":"2019-02-19T14:58:02.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-19T14:59:10.426Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-adsense/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

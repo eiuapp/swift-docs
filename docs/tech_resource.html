@@ -1,0 +1,2451 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>swift技术工具与资源 · Swift Docs - Swift 官方文档阅读 by Donald Tsang(圆月弯刀)</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Donald Tsang（圆月弯刀）">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-ghcolors.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"eiuapp/swift-docs","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://b.qqbb.app" target="_blank" class="custom-link">Donald Tsang</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://eiu.app/swift-docs" target="_blank" class="custom-link">Swift Docs</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">序言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">环境配置</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="env.html">
+            
+                <a href="env.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    swift 2.17 环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">index</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="getting_started.html">
+            
+                <a href="getting_started.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Overview and Concepts¶</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="api/object_api_v1_overview.html">
+            
+                <a href="api/object_api_v1_overview.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Object Storage API overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="overview_architecture.html">
+            
+                <a href="overview_architecture.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    Swift Architectural Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="overview_rings.html">
+            
+                <a href="overview_rings.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    The Rings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="overview_policies.html">
+            
+                <a href="overview_policies.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    Storage Policies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="overview_reaper.html">
+            
+                <a href="overview_reaper.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    The Account Reaper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../overview_auth.html">
+            
+                <span>
+            
+                    
+                        <b>4.6.</b>
+                    
+                    The Auth System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../overview_acl.html">
+            
+                <span>
+            
+                    
+                        <b>4.7.</b>
+                    
+                    Access Control Lists (ACLs)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../overview_replication.html">
+            
+                <span>
+            
+                    
+                        <b>4.8.</b>
+                    
+                    Replication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../ratelimit.html">
+            
+                <span>
+            
+                    
+                        <b>4.9.</b>
+                    
+                    Rate Limiting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../overview_large_objects.html">
+            
+                <span>
+            
+                    
+                        <b>4.10.</b>
+                    
+                    Large Object Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../overview_object_versioning.html">
+            
+                <span>
+            
+                    
+                        <b>4.11.</b>
+                    
+                    Object Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../overview_global_cluster.html">
+            
+                <span>
+            
+                    
+                        <b>4.12.</b>
+                    
+                    Global Clusters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../overview_container_sync.html">
+            
+                <span>
+            
+                    
+                        <b>4.13.</b>
+                    
+                    Container to Container Synchronization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../overview_expiring_objects.html">
+            
+                <span>
+            
+                    
+                        <b>4.14.</b>
+                    
+                    Expiring Object Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../cors.html">
+            
+                <span>
+            
+                    
+                        <b>4.15.</b>
+                    
+                    CORS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../crossdomain.html">
+            
+                <span>
+            
+                    
+                        <b>4.16.</b>
+                    
+                    Cross-domain Policy File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="../overview_erasure_code.html">
+            
+                <span>
+            
+                    
+                        <b>4.17.</b>
+                    
+                    Erasure Code Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="../overview_encryption.html">
+            
+                <span>
+            
+                    
+                        <b>4.18.</b>
+                    
+                    Object Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="../overview_backing_store.html">
+            
+                <span>
+            
+                    
+                        <b>4.19.</b>
+                    
+                    Using Swift as Backing Store for Service Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="../ring_background.html">
+            
+                <span>
+            
+                    
+                        <b>4.20.</b>
+                    
+                    Building a Consistent Hashing Ring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="../ring_partpower.html">
+            
+                <span>
+            
+                    
+                        <b>4.21.</b>
+                    
+                    Modifying Ring Partition Power
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="../associated_projects.html">
+            
+                <span>
+            
+                    
+                        <b>4.22.</b>
+                    
+                    Associated Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Developer Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../development_guidelines.html">
+            
+                <span>
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Development Guidelines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../development_saio.html">
+            
+                <span>
+            
+                    
+                        <b>5.2.</b>
+                    
+                    SAIO - Swift All In One
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../first_contribution_swift.html">
+            
+                <span>
+            
+                    
+                        <b>5.3.</b>
+                    
+                    First Contribution to Swift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../policies_saio.html">
+            
+                <span>
+            
+                    
+                        <b>5.4.</b>
+                    
+                    Adding Storage Policies to an Existing SAIO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../development_auth.html">
+            
+                <span>
+            
+                    
+                        <b>5.5.</b>
+                    
+                    Auth Server and Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../development_middleware.html">
+            
+                <span>
+            
+                    
+                        <b>5.6.</b>
+                    
+                    Middleware and Metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../development_ondisk_backends.html">
+            
+                <span>
+            
+                    
+                        <b>5.7.</b>
+                    
+                    Pluggable On-Disk Back-end APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Administrator Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../howto_installmultinode.html">
+            
+                <span>
+            
+                    
+                        <b>6.1.</b>
+                    
+                    Instructions for a Multiple Server Swift Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../deployment_guide.html">
+            
+                <span>
+            
+                    
+                        <b>6.2.</b>
+                    
+                    Deployment Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../apache_deployment_guide.html">
+            
+                <span>
+            
+                    
+                        <b>6.3.</b>
+                    
+                    Apache Deployment Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../admin_guide.html">
+            
+                <span>
+            
+                    
+                        <b>6.4.</b>
+                    
+                    Administrator’s Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../replication_network.html">
+            
+                <span>
+            
+                    
+                        <b>6.5.</b>
+                    
+                    Dedicated replication network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../logs.html">
+            
+                <span>
+            
+                    
+                        <b>6.6.</b>
+                    
+                    Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../ops_runbook/index.html">
+            
+                <span>
+            
+                    
+                        <b>6.7.</b>
+                    
+                    Swift Ops Runbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../admin/index.html">
+            
+                <span>
+            
+                    
+                        <b>6.8.</b>
+                    
+                    OpenStack Swift Administrator Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../install/index.html">
+            
+                <span>
+            
+                    
+                        <b>6.9.</b>
+                    
+                    Object Storage Install Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Object Storage v1 REST API Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../api/object_api_v1_overview.html">
+            
+                <span>
+            
+                    
+                        <b>7.1.</b>
+                    
+                    Object Storage API overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../api/discoverability.html">
+            
+                <span>
+            
+                    
+                        <b>7.2.</b>
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../api/authentication.html">
+            
+                <span>
+            
+                    
+                        <b>7.3.</b>
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../api/container_quotas.html">
+            
+                <span>
+            
+                    
+                        <b>7.4.</b>
+                    
+                    Container quotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../api/object_versioning.html">
+            
+                <span>
+            
+                    
+                        <b>7.5.</b>
+                    
+                    Object versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../api/large_objects.html">
+            
+                <span>
+            
+                    
+                        <b>7.6.</b>
+                    
+                    Large objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../api/temporary_url_middleware.html">
+            
+                <span>
+            
+                    
+                        <b>7.7.</b>
+                    
+                    Temporary URL middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="../api/form_post_middleware.html">
+            
+                <span>
+            
+                    
+                        <b>7.8.</b>
+                    
+                    Form POST middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="../api/use_content-encoding_metadata.html">
+            
+                <span>
+            
+                    
+                        <b>7.9.</b>
+                    
+                    Use Content-Encoding metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="../api/use_the_content-disposition_metadata.html">
+            
+                <span>
+            
+                    
+                        <b>7.10.</b>
+                    
+                    Use the Content-Disposition metadata
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">OpenStack End User Guide¶</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Source Documentation¶</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.</b>
+                    
+                    Partitioned Consistent Hash Ring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.1.</b>
+                    
+                    Ring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.2" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.2.</b>
+                    
+                    Ring Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.3" data-path="../ring.html">
+            
+                <span>
+            
+                    
+                        <b>9.1.3.</b>
+                    
+                    Composite Ring Builder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../proxy.html">
+            
+                <span>
+            
+                    
+                        <b>9.2.</b>
+                    
+                    Proxy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.2.1" data-path="../proxy.html">
+            
+                <span>
+            
+                    
+                        <b>9.2.1.</b>
+                    
+                    Proxy Controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2.2" data-path="../proxy.html">
+            
+                <span>
+            
+                    
+                        <b>9.2.2.</b>
+                    
+                    Proxy Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.</b>
+                    
+                    Account
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.3.1" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.1.</b>
+                    
+                    Account Auditor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3.2" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.2.</b>
+                    
+                    Account Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3.3" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.3.</b>
+                    
+                    Account Reaper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3.4" data-path="../account.html">
+            
+                <span>
+            
+                    
+                        <b>9.3.4.</b>
+                    
+                    Account Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.</b>
+                    
+                    Container
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.4.1" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.1.</b>
+                    
+                    Container Auditor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.2" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.2.</b>
+                    
+                    Container Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.3" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.3.</b>
+                    
+                    Container Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.4" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.4.</b>
+                    
+                    Container Reconciler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.5" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.5.</b>
+                    
+                    Container Replicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.6" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.6.</b>
+                    
+                    Container Sync
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4.7" data-path="../container.html">
+            
+                <span>
+            
+                    
+                        <b>9.4.7.</b>
+                    
+                    Container Updater
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../db.html">
+            
+                <span>
+            
+                    
+                        <b>9.5.</b>
+                    
+                    Account DB and Container DB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.5.1" data-path="../db.html">
+            
+                <span>
+            
+                    
+                        <b>9.5.1.</b>
+                    
+                    DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5.2" data-path="../db.html">
+            
+                <span>
+            
+                    
+                        <b>9.5.2.</b>
+                    
+                    DB replicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.</b>
+                    
+                    Object
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.6.1" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.1.</b>
+                    
+                    Object Auditor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.2" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.2.</b>
+                    
+                    Object Backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.3" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.3.</b>
+                    
+                    Object Replicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.4" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.4.</b>
+                    
+                    Object Reconstructor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.5" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.5.</b>
+                    
+                    Object Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6.6" data-path="../object.html">
+            
+                <span>
+            
+                    
+                        <b>9.6.6.</b>
+                    
+                    Object Updater
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.</b>
+                    
+                    Misc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.7.1" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.1.</b>
+                    
+                    ACLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.2" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.2.</b>
+                    
+                    Buffered HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.3" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.3.</b>
+                    
+                    Constraints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.4" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.4.</b>
+                    
+                    Container Sync Realms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.5" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.5.</b>
+                    
+                    Direct Client
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.6" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.6.</b>
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.7" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.7.</b>
+                    
+                    Internal Client
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.8" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.8.</b>
+                    
+                    Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.9" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.9.</b>
+                    
+                    MemCacheD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.10" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.10.</b>
+                    
+                    Request Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.11" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.11.</b>
+                    
+                    Swob
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.12" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.12.</b>
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.13" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.13.</b>
+                    
+                    WSGI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7.14" data-path="../misc.html">
+            
+                <span>
+            
+                    
+                        <b>9.7.14.</b>
+                    
+                    Storage Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.</b>
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.8.1" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.1.</b>
+                    
+                    Account Quotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.2" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.2.</b>
+                    
+                    Bulk Operations (Delete and Archive Auto Extraction)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.3" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.3.</b>
+                    
+                    CatchErrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.4" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.4.</b>
+                    
+                    CNAME Lookup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.5" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.5.</b>
+                    
+                    Container Quotas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.6" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.6.</b>
+                    
+                    Container Sync Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.7" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.7.</b>
+                    
+                    Cross Domain Policies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.8" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.8.</b>
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.9" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.9.</b>
+                    
+                    Domain Remap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.10" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.10.</b>
+                    
+                    Dynamic Large Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.11" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.11.</b>
+                    
+                    Encryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.12" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.12.</b>
+                    
+                    FormPost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.13" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.13.</b>
+                    
+                    GateKeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.14" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.14.</b>
+                    
+                    Healthcheck
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.15" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.15.</b>
+                    
+                    Keymaster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.16" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.16.</b>
+                    
+                    KeystoneAuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.17" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.17.</b>
+                    
+                    List Endpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.18" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.18.</b>
+                    
+                    Memcache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.19" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.19.</b>
+                    
+                    Name Check (Forbidden Character Filter)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.20" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.20.</b>
+                    
+                    Object Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.21" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.21.</b>
+                    
+                    Proxy Logging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.22" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.22.</b>
+                    
+                    Ratelimit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.23" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.23.</b>
+                    
+                    Recon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.24" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.24.</b>
+                    
+                    Server Side Copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.25" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.25.</b>
+                    
+                    Static Large Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.26" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.26.</b>
+                    
+                    StaticWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.27" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.27.</b>
+                    
+                    Symlink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.28" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.28.</b>
+                    
+                    TempAuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.29" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.29.</b>
+                    
+                    TempURL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8.30" data-path="../middleware.html">
+            
+                <span>
+            
+                    
+                        <b>9.8.30.</b>
+                    
+                    XProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Indices and tables¶</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../genindex.html">
+            
+                <span>
+            
+                    
+                        <b>10.1.</b>
+                    
+                    Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../py-modindex.html">
+            
+                <span>
+            
+                    
+                        <b>10.2.</b>
+                    
+                    Module Index
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../search.html">
+            
+                <span>
+            
+                    
+                        <b>10.3.</b>
+                    
+                    Search Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">未来</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" >
+            
+                <a target="_blank" href="https://b.qqbb.app/tags/swift/">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    我的swift探险之旅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" >
+            
+                <a target="_blank" href="https://eiuapp/swift-handbook/">
+            
+                    
+                        <b>11.2.</b>
+                    
+                    Swift Handbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">相关资源</li>
+        
+        
+    
+        <li class="chapter active" data-level="12.1" data-path="tech_resource.html">
+            
+                <a href="tech_resource.html">
+            
+                    
+                        <b>12.1.</b>
+                    
+                    swift技术工具与资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >swift技术工具与资源</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><h1 id="swift&#x6280;&#x672F;&#x5DE5;&#x5177;&#x4E0E;&#x8D44;&#x6E90;">swift&#x6280;&#x672F;&#x5DE5;&#x5177;&#x4E0E;&#x8D44;&#x6E90;</h1>
+<h2 id="&#x5382;&#x5546;">&#x5382;&#x5546;</h2>
+<p><strong>swiftstack</strong></p>
+<p><a href="https://github.com/swiftstack/" target="_blank">https://github.com/swiftstack/</a></p>
+<h2 id="&#x76D1;&#x63A7;&#x5DE5;&#x5177;">&#x76D1;&#x63A7;&#x5DE5;&#x5177;</h2>
+<p><strong>Tulsi</strong> </p>
+<p><a href="https://github.com/vedgithub/tulsi" target="_blank">https://github.com/vedgithub/tulsi</a></p>
+<p><strong>swift-drive-audit</strong></p>
+<p>&#x78C1;&#x76D8;&#x76D1;&#x63A7;&#x5DE5;&#x5177;</p>
+<p><strong>swift-exporter</strong></p>
+<p><a href="https://github.com/swiftstack/swift-exporter" target="_blank">https://github.com/swiftstack/swift-exporter</a></p>
+<h2 id="&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;">&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;</h2>
+<p><strong>ssbench</strong></p>
+<p><a href="https://github.com/swiftstack/ssbench" target="_blank">https://github.com/swiftstack/ssbench</a></p>
+<p><strong>cosbench</strong></p>
+<p><a href="https://github.com/intel-cloud/cosbench" target="_blank">https://github.com/intel-cloud/cosbench</a></p>
+<footer class="page-footer"><span class="copyright"><p><a href="https://github.com/eiuapp/swift-handbook" target="_blank">Openstack Swift&#x5B9E;&#x8DF5;&#x6307;&#x5357;</a> | <a href="https://github.com/eiuapp/swift-handbook" target="_blank">Openstack Swift&#x5B9E;&#x8DF5;&#x6307;&#x5357;</a></p><p><a href="https://res.cloudinary.com/dmtixvmgt/image/upload/v1539022273/wechat-qrcode_cml5dm.jpg" data-lightbox="2fd927ee-fa64-4eca-8ed5-6bd72b573a3c" target="_blank">&#x70B9;&#x51FB;&#x5173;&#x6CE8;&#x3010;servicemesher&#x3011;&#x516C;&#x4F17;&#x53F7;&#x56DE;&#x590D;&#x3010;&#x52A0;&#x7FA4;&#x3011;&#x52A0;&#x5165;&#x5B66;&#x4E60;&#x7FA4;</a> | </p>Copyright &#xA9; <a href="https://eiu.app" target="_blank">eiu.app</a> 2017-2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification"> Updated at 
+2019-02-19 14:58:02
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"swift技术工具与资源","level":"12.1","depth":1,"previous":{"title":"Swift Handbook","level":"11.2","depth":1,"url":"https://eiuapp/swift-handbook/","ref":"https://eiuapp/swift-handbook/","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general","lightbox","adsense","ga"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"<p><a href=https://github.com/eiuapp/swift-handbook>Openstack Swift实践指南</a> | <a href=https://github.com/eiuapp/swift-handbook>Openstack Swift实践指南</a></p><p><a href=https://res.cloudinary.com/dmtixvmgt/image/upload/v1539022273/wechat-qrcode_cml5dm.jpg data-lightbox=2fd927ee-fa64-4eca-8ed5-6bd72b573a3c>点击关注【servicemesher】公众号回复【加群】加入学习群</a> | </p>Copyright © <a href=https://eiu.app>eiu.app</a> 2017-2019","modify_label":" Updated at ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"lang":{"shell":"bash"},"css":["prism-themes/themes/prism-ghcolors.css"]},"github":{"url":"https://github.com/eiuapp/swift-docs"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/eiuapp/swift-docs/blob/master/"},"splitter":{},"adsense":{"client":"ca-pub-4029167986768912","slot":"2445941692","format":"auto","element":".page-inner section","position":"bottom"},"codesnippet":{},"sitemap-general":{"prefix":"https://eiu.app/swift-docs/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"lightbox":{"jquery":true},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"eiuapp/swift-docs","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"11f7d254cfa4e0ca44b175c66d379ecc"},"ga":{"configuration":"auto","token":"UA-93485976-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{}},"theme":"default","author":"Donald Tsang（圆月弯刀）","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Swift Docs - Swift 官方文档阅读 by Donald Tsang(圆月弯刀)","language":"zh-hans","links":{"sidebar":{"Donald Tsang":"https://b.qqbb.app","Swift Docs":"https://eiu.app/swift-docs"}},"gitbook":"*","description":"Swift Docs - Swift 官方文档阅读 2019年 by Donald Tsang(圆月弯刀) "},"file":{"path":"docs/tech_resource.md","mtime":"2019-02-19T14:58:02.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-19T14:59:10.426Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-adsense/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
