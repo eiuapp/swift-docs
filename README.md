@@ -13,6 +13,8 @@ Welcome to Swift’s documentation!
 
 下图是swift生态圈图：
 
+https://docs.openstack.org/swift/queens/associated_projects.html
+
 <!-- ![swift生态](images/container-ecosystem.png) -->
 
 ## 相关资源

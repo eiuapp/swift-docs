@@ -11,13 +11,13 @@
 ## index
 
 *   [Index](docs/index.md)
-*   [Getting Started](getting_started.html)
+*   [Getting Started](docs/getting_started.md)
 
 Overview and Concepts[¶](#overview-and-concepts "Permalink to this headline")
 -----------------------------------------------------------------------------
 
-*   [Object Storage API overview](api/object_api_v1_overview.html)
-*   [Swift Architectural Overview](overview_architecture.html)
+*   [Object Storage API overview](docs/api/object_api_v1_overview.md)
+*   [Swift Architectural Overview](docs/overview_architecture.md)
 *   [The Rings](docs/overview_rings.md)
 *   [Storage Policies](docs/overview_policies.md)
 *   [The Account Reaper](docs/overview_reaper.md)
