@@ -2,7 +2,11 @@
 _book/*
 node_modules/*
 .DS_Store
+<<<<<<< HEAD
 .emacs.d/
 flymd.html
 flymd.md
 *.temp
+=======
+deploy.sh
+>>>>>>> add travis.yml
