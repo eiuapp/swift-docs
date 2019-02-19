@@ -1,33 +1,28 @@
-#No language required so just use ruby to avoid warnings in travis yml linter
+sudo: false
 language: node_js
-# dist: trusty
-sudo: required
-
 node_js:
-  - "stable"
-
+    - 'stable'
 cache:
-  directories:
-    - node_modules # NPM packages
-
+    directories:
+        - node_modules
+notifications:
+    email: false
+branches:
+    only:
+        - master
+env:
+    global:
+        - DEPLOY_BRANCH="master"
+        - SOURCE_DIR="output"
+        - TARGET_BRANCH="gh-pages"
+        - SSH_KEY="id_rsa"
+        - GIT_NAME="travis"
+        - GIT_EMAIL="deploy@travis-ci.org"
+script:
+    - echo "Cloning gecko-dev can take some time"
+    - travis_wait 30 npm run travis-render
+after_success:
+    - npm run travis-publish
 before_install:
-  - sudo apt-get -qq update
-    #calibre required for gitbook pdf
-  - sudo apt-get install -y calibre
-
-install:
-  #- . $HOME/.nvm/nvm.sh
-  #- nvm install stable
-  #- nvm use stable
-  #- npm install
-  - npm install -g gitbook-cli
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  local_dir: _book
-  target_branch: gh-pages
-  on:
-    branch: master
+    - openssl aes-256-cbc -K $encrypted_71cd8ed3d44b_key -iv $encrypted_71cd8ed3d44b_iv
+      -in id_rsa.enc -out id_rsa -d
