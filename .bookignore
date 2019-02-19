@@ -1,6 +1,9 @@
 # GitBook ignore file.
 # We ignore everything that isn't docs
 .gitignore
+.travis.yml
 .bookignore
 _unused/*
+.DS_Store
 deploy.sh
+_book/gitbook/images/*
